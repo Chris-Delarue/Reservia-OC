@@ -311,7 +311,7 @@ div.activites1{
     border: solid 1px;
     border-color:#EEEEEE;
     height: 550px;
-    width:355px;
+    width:320px;
     margin-right:10px;
     border-radius: 20px 20px 20px 20px;
     box-shadow: 10px 5px 5px #f2f2f2;
@@ -321,7 +321,7 @@ div.activites2{
     border: solid 1px;
     border-color:#EEEEEE;
     height:280px;
-    width:355px;
+    width:320px;
     margin:0px 15px 22px 0px;
     border-radius: 20px 20px 20px 20px;
     box-shadow: 10px 5px 5px #f2f2f2;
@@ -331,7 +331,7 @@ div.activites3{
     border: solid 1px;
     border-color:#EEEEEE;
     height:245px;
-    width:355px;
+    width:320px;
     border-radius: 20px 20px 20px 20px;
     box-shadow: 10px 5px 5px #f2f2f2;
 }
@@ -340,7 +340,7 @@ div.activites4{
     border: solid 1px;
     border-color:#EEEEEE;
     height:245px;
-    width:355px;
+    width:320px;
     margin-bottom:22px;
     border-radius: 20px 20px 20px 20px;
     box-shadow: 10px 5px 5px #f2f2f2;
@@ -350,7 +350,7 @@ div.activites5{
     border: solid 1px;
     border-color:#EEEEEE;
     height:280px;
-    width:355px;
+    width:320px;
     border-radius: 20px 20px 20px 20px;
     box-shadow: 10px 5px 5px #f2f2f2;
 }
@@ -363,13 +363,13 @@ div.activites5{
 }
 .activites1 img{
     height:500px;
-    width:355px;
+    width:320px;
     border-radius: 20px 20px 0px 0px;
     padding:0px;
 }
 .activites2 img{
     height:230px;
-    width:355px;
+    width:320px;
     border-radius: 20px 20px 0px 0px;
 }
 .activites3 img{
@@ -379,12 +379,12 @@ div.activites5{
 }
 .activites4 img{
     height:195px;
-    width:355px;
+    width:320px;
     border-radius: 20px 20px 0px 0px; 
 }
 .activites5 img{
     height:230px;
-    width:355px;
+    width:320px;
     border-radius: 20px 20px 0px 0px; 
 }
 
