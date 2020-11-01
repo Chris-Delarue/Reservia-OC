@@ -4,8 +4,9 @@ body, html{
 }
 
 /*HEADER*/
+
 header{
-    margin-top:30px;
+    margin-top:20px;
 }
 div.logo {
     float:left;
@@ -16,14 +17,13 @@ nav {
     display:flex;
     flex-direction:row-reverse;
     flex-wrap:wrap;
-    margin-top:10px;
     margin-right:30px;
     font-size:15px;
     }
 nav li{
     list-style-type: none;
     display:inline-block;
-    margin-right:20px;
+    margin:0px 0px  0px 20px;
 }
 nav a{
     text-decoration:none;
@@ -60,7 +60,7 @@ nav li:hover a{
 #search{
     display:flex;
     flex-direction:column;
-    margin-left:40px;
+    margin:0px 0px 0px 40px;
 }
 div.rechercher{
     display:flex;
@@ -310,7 +310,7 @@ div.activites1{
     border: solid 1px;
     border-color:#EEEEEE;
     height: 550px;
-    width:320px;
+    width:355px;
     margin-right:10px;
     border-radius: 20px 20px 20px 20px;
     box-shadow: 10px 5px 5px #f2f2f2;
@@ -320,7 +320,7 @@ div.activites2{
     border: solid 1px;
     border-color:#EEEEEE;
     height:280px;
-    width:320px;
+    width:355px;
     margin:0px 15px 22px 0px;
     border-radius: 20px 20px 20px 20px;
     box-shadow: 10px 5px 5px #f2f2f2;
@@ -330,7 +330,7 @@ div.activites3{
     border: solid 1px;
     border-color:#EEEEEE;
     height:245px;
-    width:320px;
+    width:355px;
     border-radius: 20px 20px 20px 20px;
     box-shadow: 10px 5px 5px #f2f2f2;
 }
@@ -339,7 +339,7 @@ div.activites4{
     border: solid 1px;
     border-color:#EEEEEE;
     height:245px;
-    width:320px;
+    width:355px;
     margin-bottom:22px;
     border-radius: 20px 20px 20px 20px;
     box-shadow: 10px 5px 5px #f2f2f2;
@@ -349,7 +349,7 @@ div.activites5{
     border: solid 1px;
     border-color:#EEEEEE;
     height:280px;
-    width:320px;
+    width:355px;
     border-radius: 20px 20px 20px 20px;
     box-shadow: 10px 5px 5px #f2f2f2;
 }
@@ -362,13 +362,13 @@ div.activites5{
 }
 .activites1 img{
     height:500px;
-    width:320px;
+    width:355px;
     border-radius: 20px 20px 0px 0px;
     padding:0px;
 }
 .activites2 img{
     height:230px;
-    width:320px;
+    width:355px;
     border-radius: 20px 20px 0px 0px;
 }
 .activites3 img{
@@ -378,12 +378,12 @@ div.activites5{
 }
 .activites4 img{
     height:195px;
-    width:320px;
+    width:355px;
     border-radius: 20px 20px 0px 0px; 
 }
 .activites5 img{
     height:230px;
-    width:320px;
+    width:355px;
     border-radius: 20px 20px 0px 0px; 
 }
 
