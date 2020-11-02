@@ -2,6 +2,10 @@
 body, html{
     font-family: 'Raleway', sans-serif;
 }
+#all_page{
+    width:auto;
+    margin:auto;
+}
 
 /*HEADER*/
 
@@ -11,25 +15,26 @@ header{
 div.logo {
     float:left;
     margin-top:10px;
-    margin-left:40px;
+    margin-left:80px;
 }
 nav {
     display:flex;
     flex-direction:row-reverse;
     flex-wrap:wrap;
-    margin-right:30px;
+    margin-right:200px;
     font-size:15px;
     }
-nav li{
+.nav li{
     list-style-type: none;
     display:inline-block;
-    margin:0px 0px  0px 20px;
+    margin:0px 0px 0px 30px;
 }
-nav a{
+
+.nav a{
     text-decoration:none;
     display: inline-block;
     text-align:center;
-    padding:20px 20px;
+    padding:20px 10px 10px 10px;
 }
 nav li:hover a{
     color: #0065fc;
@@ -44,11 +49,11 @@ nav li:hover a{
 }
 .inscription:hover{
     border-top:1px solid;
-    border-width: center;
     color: #0065FC;
 }
 .inscription a{
     color:#0065Fc;
+    font-weight:800;
 }
 .heberger a, .activity a{
     color:black;
@@ -60,7 +65,7 @@ nav li:hover a{
 #search{
     display:flex;
     flex-direction:column;
-    margin:0px 0px 0px 40px;
+    margin:0px 0px 0px 80px;
 }
 div.rechercher{
     display:flex;
@@ -118,7 +123,7 @@ div.icones{
     margin-left:40px;
 }
 .titre_filtre{
-    padding: 20px 50px 50px 40px;
+    padding: 20px 50px 50px 80px;
     }
 .filtres{
     display:flex;
@@ -165,13 +170,12 @@ button:hover{
 .fa-info{
     padding:6px 0px 0px 15px;
 }
-
 i{
     color:#0065fc;
 }
 div.logement{
     display:flex;
-    margin-left:40px;
+    margin:0px 0px 20px 80px;
 }
 .logement h4{
     padding:2px;
@@ -180,16 +184,16 @@ div.logement{
 
 #accommodation{
     display:flex;
-    flex-direction:row;
     flex-wrap:wrap;
-    margin-left:40px;
+    margin-left:80px;
 }
 div.hebergements{
     background-color:#f2f2f2;
-    width:65%;
+    width:1000px;
+    height:750px;
     border-radius:20px 20px 20px 20px;
     margin-right:1%;
-    padding-left:0px 0% 60px 3%;
+    padding:0px 15px 60px 15px;
 }
 div.hebergements1 {
     display:flex;
@@ -197,8 +201,8 @@ div.hebergements1 {
     border-radius: 20px 20px 20px 20px;
     background-color:white;
     margin: 20px 2% 30px 2%;
-    width:29%;
-    padding:0px;
+    width:400px;
+    height:275px;
 }
 .row{
     display:flex;
@@ -235,8 +239,8 @@ div.loge1 img{
     color:#f2f2f2;
 }
 .afficher {
-    padding-left:4%;
-    margin-bottom:30px;
+    padding: 10px 0px 0px 40px;
+    margin-bottom:20px;
 }
 div .afficher a{
     text-decoration:none;
@@ -250,7 +254,8 @@ div.populaire{
     flex-direction:row;
     flex-wrap:wrap;
     background-color:#f2f2f2;
-    width: 31%;
+    width:550px;
+    height:810px;
     border-radius:20px;
 }
 div.logepopu1 { 
@@ -258,24 +263,24 @@ div.logepopu1 {
     flex-direction:row;
     border-radius:20px;
     background-color:white;
-    margin: 0px 20px 20px 33px;
-    width: 85%;
+    width: 450px;
     height:180px;
+    margin:0px 0px 0px 45px;
 }
 
 .logepopu1 img{
-    width:90%;
+    width:190px;
     height:170px;
     border-radius: 20px 0px 0px 25px;
-    border-color:blue;
     padding:5px 0px 5px 5px;
 }
 div.note {
     font-size:17px;
     width:600px;
+    margin-left:40px;
 }
 .popu{
-    margin:20px 0% 7% 40px;
+    margin:20px 0% 0px 20px;
     width:100%;
 }
  .fa-chart-line{
@@ -292,12 +297,12 @@ div.note {
 #Activities{
     display:flex;
     flex-wrap:wrap;
-    margin: 30px 30px 0px 0px;
-    width:100%;
+    margin: 30px 0px 0px 50px;
+    height:650px;
+    width:1620px;
 }
 div.activites{
     display:flex;
-    margin-left:40px;
 }
 .activ{
     margin: 0px 0px 0px 10px;
@@ -310,8 +315,8 @@ div.activites1{
     background:white;
     border-color:#EEEEEE;
     height: 550px;
-    width:355px;
-    margin-right:10px;
+    width:375px;
+    margin: 0px 10px 0px 40px;
     border-radius: 20px 20px 20px 20px;
     box-shadow: 10px 5px 5px #f2f2f2;
 }
@@ -319,8 +324,8 @@ div.activites2{
     background:white;
     border-color:#EEEEEE;
     height:280px;
-    width:355px;
-    margin:0px 15px 22px 0px;
+    width:375px;
+    margin:0px 0px 22px 0px;
     border-radius: 20px 20px 20px 20px;
     box-shadow: 10px 5px 5px #f2f2f2;
 }
@@ -328,7 +333,7 @@ div.activites3{
     background:white;
     border-color:#EEEEEE;
     height:245px;
-    width:355px;
+    width:375px;
     border-radius: 20px 20px 20px 20px;
     box-shadow: 10px 5px 5px #f2f2f2;
 }
@@ -336,7 +341,7 @@ div.activites4{
     background:white;
     border-color:#EEEEEE;
     height:245px;
-    width:355px;
+    width:375px;
     margin-bottom:22px;
     border-radius: 20px 20px 20px 20px;
     box-shadow: 10px 5px 5px #f2f2f2;
@@ -345,7 +350,7 @@ div.activites5{
     background:white;
     border-color:#EEEEEE;
     height:280px;
-    width:355px;
+    width:375px;
     border-radius: 20px 20px 20px 20px;
     box-shadow: 10px 5px 5px #f2f2f2;
 }
@@ -358,28 +363,28 @@ div.activites5{
 }
 .activites1 img{
     height:500px;
-    width:355px;
+    width:375px;
     border-radius: 20px 20px 0px 0px;
     padding:0px;
 }
 .activites2 img{
     height:230px;
-    width:355px;
+    width:375px;
     border-radius: 20px 20px 0px 0px;
 }
 .activites3 img{
     height:195px;
-    width:355px;
+    width:375px;
     border-radius: 20px 20px 0px 0px;  
 }
 .activites4 img{
     height:195px;
-    width:355px;
+    width:375px;
     border-radius: 20px 20px 0px 0px; 
 }
 .activites5 img{
     height:230px;
-    width:355px;
+    width:375px;
     border-radius: 20px 20px 0px 0px; 
 }
 
@@ -388,22 +393,23 @@ div.activites5{
 
 footer{
     display:flex;
+    flex-wrap:wrap;
     margin-top:30px;
     background-color:#f2f2f2;
+    width:auto;
+    padding-left:50px;
 }
-footer div{
-    width:100%;
-}
-footer ul{
-    padding:0px;
+div.foot{
+    margin-left:300px;
 }
 footer li{
     list-style-type: none;
     display: block;
 }
 .propos{
-    margin-left:40px;
+    padding-left:40px;
 }
-.note1{
-    margin-left:40px;
-}
+
+
+/*MEDIA QUERIES*/
+
