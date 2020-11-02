@@ -21,7 +21,7 @@ nav {
     display:flex;
     flex-direction:row-reverse;
     flex-wrap:wrap;
-    margin-right:200px;
+    margin-right:80px;
     font-size:15px;
     }
 .nav li{
@@ -189,19 +189,19 @@ div.logement{
 }
 div.hebergements{
     background-color:#f2f2f2;
-    width:1000px;
+    width:auto;
     height:750px;
     border-radius:20px 20px 20px 20px;
     margin-right:1%;
-    padding:0px 15px 60px 15px;
+    padding:0px 15px 40px 15px;
 }
 div.hebergements1 {
     display:flex;
     flex-direction:column;
     border-radius: 20px 20px 20px 20px;
     background-color:white;
-    margin: 20px 2% 30px 2%;
-    width:400px;
+    margin: 10px 0px 20px 10px;
+    width:370px;
     height:275px;
 }
 .row{
@@ -239,8 +239,9 @@ div.loge1 img{
     color:#f2f2f2;
 }
 .afficher {
-    padding: 10px 0px 0px 40px;
+    padding: 20px 0px 0px 40px;
     margin-bottom:20px;
+    font-weight:800;
 }
 div .afficher a{
     text-decoration:none;
@@ -255,7 +256,7 @@ div.populaire{
     flex-wrap:wrap;
     background-color:#f2f2f2;
     width:550px;
-    height:810px;
+    height:790px;
     border-radius:20px;
 }
 div.logepopu1 { 
@@ -297,26 +298,26 @@ div.note {
 #Activities{
     display:flex;
     flex-wrap:wrap;
-    margin: 30px 0px 0px 50px;
-    height:650px;
-    width:1620px;
+    margin:30px 0px 0px 80px;
 }
 div.activites{
+    display:flex;
+    width:auto;
+    height:600px;
+    margin-right:50px;
+}
+.acti_mar{
     display:flex;
 }
 .activ{
     margin: 0px 0px 0px 10px;
 }
-div.acti_mar{
-    display:flex;
-    flex-direction:row;
-}
+
 div.activites1{
     background:white;
     border-color:#EEEEEE;
     height: 550px;
-    width:375px;
-    margin: 0px 10px 0px 40px;
+    width:425px;
     border-radius: 20px 20px 20px 20px;
     box-shadow: 10px 5px 5px #f2f2f2;
 }
@@ -324,8 +325,8 @@ div.activites2{
     background:white;
     border-color:#EEEEEE;
     height:280px;
-    width:375px;
-    margin:0px 0px 22px 0px;
+    width:425px;
+    margin:0px 10px 22px 10px;
     border-radius: 20px 20px 20px 20px;
     box-shadow: 10px 5px 5px #f2f2f2;
 }
@@ -333,7 +334,7 @@ div.activites3{
     background:white;
     border-color:#EEEEEE;
     height:245px;
-    width:375px;
+    width:425px;
     border-radius: 20px 20px 20px 20px;
     box-shadow: 10px 5px 5px #f2f2f2;
 }
@@ -341,7 +342,7 @@ div.activites4{
     background:white;
     border-color:#EEEEEE;
     height:245px;
-    width:375px;
+    width:425px;
     margin-bottom:22px;
     border-radius: 20px 20px 20px 20px;
     box-shadow: 10px 5px 5px #f2f2f2;
@@ -350,12 +351,9 @@ div.activites5{
     background:white;
     border-color:#EEEEEE;
     height:280px;
-    width:375px;
+    width:425px;
     border-radius: 20px 20px 20px 20px;
     box-shadow: 10px 5px 5px #f2f2f2;
-}
-.acti{
-    margin-left:40px;
 }
 .acti_mar p{
     border:none;
@@ -363,28 +361,28 @@ div.activites5{
 }
 .activites1 img{
     height:500px;
-    width:375px;
+    width:425px;
     border-radius: 20px 20px 0px 0px;
     padding:0px;
 }
 .activites2 img{
     height:230px;
-    width:375px;
+    width:425px;
     border-radius: 20px 20px 0px 0px;
 }
 .activites3 img{
     height:195px;
-    width:375px;
+    width:425px;
     border-radius: 20px 20px 0px 0px;  
 }
 .activites4 img{
     height:195px;
-    width:375px;
+    width:425px;
     border-radius: 20px 20px 0px 0px; 
 }
 .activites5 img{
     height:230px;
-    width:375px;
+    width:425px;
     border-radius: 20px 20px 0px 0px; 
 }
 
