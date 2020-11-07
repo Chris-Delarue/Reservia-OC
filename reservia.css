@@ -152,7 +152,12 @@ div.icones i:hover{
 #filtres b{
     padding:5px 10px 0px 4px;
 }
-
+#filtres p{
+    border: solid 1px;
+    border-radius: 50px;
+    border-color:#EEEEEE;
+    margin:30px 20px;
+}
 .info{
     height:30px;
     width:35px;
