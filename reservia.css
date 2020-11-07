@@ -27,8 +27,6 @@ div.logo {
     justify-content: flex-end;
     list-style:none;
     margin:0;
-    border-top:#0065fc;
-    padding:20px 0px 20px 30px;
     }
 
 ul.nav{
@@ -46,25 +44,15 @@ ul.nav{
 nav li:hover a{
     color: #0065fc;
 }
-.heberger:hover{
+.link_hover:hover{
     border-top: solid 1px;
     color:#0065fc;
 }
-.activity:hover{
-    border-top:1px solid;
-    color: #0065FC;
+.link_hover{
+    border-top: transparent solid 1px;
+    padding:20px 0px 20px 30px;
 }
-.inscription:hover{
-    border-top:1px solid;
-    color: #0065FC;
-}
-.inscription a{
-    color:#0065Fc;
-    font-weight:800;
-}
-.heberger a, .activity a{
-    color:black;
-}
+
 
 
 /*POSITION*/
@@ -72,11 +60,13 @@ nav li:hover a{
 #search{
     display:flex;
     flex-direction:column;
+    width:100%;
     margin-left:80px;
 }
 div.rechercher{
     display:flex;
     justify-content:flex-start;
+    
 }
 button.btn1{
     background-color:#0065fc;
@@ -193,53 +183,37 @@ div.logement{
     /*HEBERGEMENTS*/
 
 #accommodation{
-    display:flex;
-    flex-wrap:wrap;
     margin-left:80px;
 }
-div.hebergements{
+div.accommodation_container{
+    display: flex;
+    flex-flow: wrap;
     background-color:#f2f2f2;
-    width:auto;
+    width:65%;
     height:750px;
     border-radius:20px 20px 20px 20px;
     margin-right:1%;
     padding:0px 15px 40px 15px;
 }
-div.hebergements1 {
-    display:flex;
-    flex-direction:column;
+div.card{
     border-radius: 20px 20px 20px 20px;
     background-color:white;
-    margin: 10px 0px 20px 10px;
-    width:370px;
+    width:30%;
     height:275px;
 }
-.row{
+.card_text_content{
     display:flex;
-    margin-left:1%;
-}
-div.loge1 p{
-    border:none;
+    flex-direction:column;
     font-size:17px;
-    font-weight:800;
     padding-left:20px;
 }
-div.loge1 img{
-    width:355px;
+div.card_image{
+    width:20%;
     height:160px;
     border-radius: 20px 20px 0px 0px;
     border-color:white;
     padding: 5px;
 }  
-#accommodation h3{
-    padding-top:20px;
-}
-.hebergements em{
-    margin-left:20px;
-}
-.hebergements h3{
-    padding:20px 40px;
-}
 .etoile1{
     margin-left:20px;
     color:#0065fc;
@@ -253,7 +227,7 @@ div.loge1 img{
     margin-bottom:20px;
     font-weight:800;
 }
-div .afficher a{
+div.afficher a{
     text-decoration:none;
     color:black;
 }
@@ -307,20 +281,23 @@ div.note {
 /*ACTIVITES*/
 
 #Activities{ 
-    flex-direction:column;
     width:auto;
     margin:30px 0px 0px 80px;
     padding:0px;
 }
 .activites{
     display:flex;
-    flex: 1 ;
+    width:auto;
 }
 .acti_mar{
     display:flex;
+    width:auto;
+    padding:0;
+    margin-right:5px;
 }
+
 .activ{
-    margin: 0px 0px 0px 10px;
+    margin: 0px 0px 0px 5px;
 }
 
 div.activites1{
@@ -330,13 +307,14 @@ div.activites1{
     width:425px;
     border-radius: 20px 20px 20px 20px;
     box-shadow: 10px 5px 5px #f2f2f2;
+    margin-right:5px;
 }
 div.activites2{
     background:white;
     border-color:#EEEEEE;
     height:280px;
     width:425px;
-    margin:0px 0px 22px 10px;
+    margin:0px 5px 22px 5px;
     border-radius: 20px 20px 20px 20px;
     box-shadow: 10px 5px 5px #f2f2f2;
 }
@@ -347,14 +325,14 @@ div.activites3{
     width:425px;
     border-radius: 20px 20px 20px 20px;
     box-shadow: 10px 5px 5px #f2f2f2;
-    margin: 0px 0px 0px 10px;
+    margin: 0px 5px 0px 5px;
 }
 div.activites4{
     background:white;
     border-color:#EEEEEE;
     height:245px;
     width:425px;
-    margin: 0px 0px 22px 10px;
+    margin: 0px 0px 22px 5px;
     border-radius: 20px 20px 20px 20px;
     box-shadow: 10px 5px 5px #f2f2f2;
 }
@@ -365,7 +343,7 @@ div.activites5{
     width:425px;
     border-radius: 20px 20px 20px 20px;
     box-shadow: 10px 5px 5px #f2f2f2;
-    margin: 0px 0px 0px 10px;
+    margin: 0px 0px 0px 5px;
 }
 .acti_mar p{
     padding-left: 20px;
@@ -422,14 +400,32 @@ footer div{
 /*MEDIA QUERIES IPHONE 8*/
 
 @media only screen 
-and (min-device-width : 375px) 
-and (max-device-width : 667px) 
-and (-webkit-min-device-pixel-ratio: 2)
+    and (device-width : 375px) 
+    and (device-height : 667px) 
 { 
+   
 /*HEADER*/
-  header{
-      border:solid 1px;
+
+    header{
+        border:solid 1px green;
+        margin-top:20px;
+        padding:0;
   }
+    div.logo{
+        border: solid 1px;
+        float:left;
+        margin:30px 0px 0px 10px;
+        padding:0;
+    }
+    
+    .nav{
+        display:flex;
+        flex-flow: column-reverse wrap;
+        justify-content: flex-end;
+        list-style:none;
+        padding: 20px 0px 0px 11a0px;
+    }
+    
 
 /*POSITION*/
 
@@ -437,12 +433,12 @@ and (-webkit-min-device-pixel-ratio: 2)
         display:flex;
         flex-direction:column;
         width:300px;
-        margin:0px 0px 0px 20px;
+        margin:0px 0px 0px 10px;
     }
     button.btn1{
         background-color:#0065fc;
         color:white;
-        border-radius:10px 10px 10px 10px;
+        border-radius:15px;
         height:50px;
         width:50px;
         padding:0px 11px 15px 10px;
@@ -453,16 +449,22 @@ and (-webkit-min-device-pixel-ratio: 2)
         color:white;
         padding-top:15px;
     }
+    button.btn1{
+        margin-left:-10px;
+    }
+    .fa-map-marker-alt{
+        width:50px;
+    }
     span{
         display :none;
     }
 
     input{
         height:46px;
-        border:solid 1px;
+        width: 200px;
         border-color:#EEEEEE;
         padding-left:20px;
-        font-weight:800
+        font-weight:800;
     }
     .position{
         width:50px;
@@ -475,6 +477,7 @@ and (-webkit-min-device-pixel-ratio: 2)
     .position i{
         padding:15px 10px 0px 20px;
     }
+
 
 
 /*FILTRES*/
@@ -494,7 +497,7 @@ and (-webkit-min-device-pixel-ratio: 2)
         padding:10px 5px 0px 4px;
     }
     #filtres div p{
-         margin:10px 20px 0px 20px;
+         margin:10px 20px 0px 10px;
     }
     .icones p{
         border-radius: 50px;
@@ -503,7 +506,7 @@ and (-webkit-min-device-pixel-ratio: 2)
         margin:0px;
     }
     .titre_filtre{
-        padding:10px 0px 0px 20px;
+        padding:10px 0px 0px 10px;
     }
     .info{
         height:30px;
@@ -522,7 +525,7 @@ and (-webkit-min-device-pixel-ratio: 2)
     }
     div.logement{
         display:flex;
-        margin:0px 60px 20px 20px;
+        margin:0px 60px 20px 10px;
     }
     .logement h4{
         padding:2px;
@@ -539,6 +542,7 @@ and (-webkit-min-device-pixel-ratio: 2)
         width:100%;
         height:600px;
         border-radius:0px;
+        margin-left:0px;
     }
     div.logepopu1 { 
         display:flex;
@@ -569,19 +573,19 @@ and (-webkit-min-device-pixel-ratio: 2)
     #accommodation{
         display: flex;
         flex-flow: column-reverse;
-        margin-left:0px;
+        margin-left:10px;
     }
     #accommodation h3{
         padding:10px 0px 0px 10px;
     }
-    div.hebergements{
+    div.accommodation_container{
         background-color:transparent;
         width:100%;
         height:fit-content;
         padding:0px;
         margin:10px 0px 0px 5px;
     }
-    div.hebergements1{
+    div.card{
         border-color:#EEEEEE;
         background:white;
         border-radius: 20px 20px 20px 20px;
@@ -590,11 +594,8 @@ and (-webkit-min-device-pixel-ratio: 2)
         width:95%;
         height:180px;
     }
-    .row{
-        display: flex;
-        flex-direction:column;
-    }
-    div.loge1 img{
+    
+    div.card_imgage{
         width:97%;
         height:100px;
         border-radius: 20px 20px 0px 0px;
@@ -603,7 +604,7 @@ and (-webkit-min-device-pixel-ratio: 2)
         margin:0px;
     }  
     
-    div.loge1 p{
+    div.card_text_content{
         font-size:17px;
         font-weight:800;
         padding:2px 0px 5px 20px;
@@ -616,7 +617,11 @@ and (-webkit-min-device-pixel-ratio: 2)
 /*ACTIVITES*/
 
 #Activities{
-    margin-left:10px;
+    margin-left:20px;
+}
+.activites{
+    display: flex;
+    flex-direction:column;
 }
 .acti_mar{
     display:flex;
@@ -654,7 +659,7 @@ div.activites2 img, div.activites3 img, div.activites4 img, div.activites5 img{
         height:auto;
         width:91%;
         margin-left:10px;
-        padding:20px 0px 0px 30px;;
+        padding:20px 0px 0px 20px;;
     }
     footer div{
         width:375px;
