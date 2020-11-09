@@ -1,10 +1,9 @@
 
-body, html{
+
+html, body{
+    font-family: 'Raleway', sans-serif;
     margin:0;
     padding:0;
-}
-body{
-    font-family: 'Raleway', sans-serif;
 }
 
 
@@ -12,8 +11,7 @@ body{
 
 header{  
     width:auto;
-    margin:20px 100px 0px 80px;
-    padding-right:50px;
+    margin:20px 300px 0px 80px;
 }
 div.logo {
     float:left;
@@ -184,8 +182,8 @@ i{
 
 #accommodation{
     display:flex;
-    margin-left:80px;
-    width: 91%;
+    margin: 0px 200px 0px 80px;
+    width:auto;
 }
 #accommodation_container{
     display:flex;
@@ -247,32 +245,34 @@ i{
     display:flex;
     flex-direction:column; 
     background-color:#f2f2f2;
-    width:32%;
+    width:25%;
     border-radius:20px;
 }
 .logepopu1 { 
     display:flex;
+    flex-wrap: row wrap;
     border-radius:20px;
     background-color:white;
-    width:500px;
-    height:180px;
+    width:90%;
+    height:170px;
     margin: 20px 0px 10px 20px;
-    padding:0;
 }
 
 .populaire_image img{
-    width:200px;
-    height:170px;
+    width:160px;
+    height:160px;
     border-radius: 20px 0px 0px 25px;
-    padding:5px 0px 5px 5px;
+    padding:5px 10px 5px 5px;
 }
 .note {
+    width:auto;
     display: flex;
     flex-direction:column;
     font-size:17px;
-    width:300px;
-    height:170px;
-    padding-left: 20px;
+    height:160px;
+}
+.note em{
+    line-height: 1px;
 }
 .popu{
     margin:35px 0px 0px 30px;
@@ -284,7 +284,7 @@ i{
     padding-right:9%;
  }
  .etoile2{
-    padding-top:40px;
+    padding-top:60px;
 }
 
 
@@ -292,7 +292,7 @@ i{
 
 #Activities{ 
     width:auto;
-    margin:30px 0px 0px 80px;
+    margin:30px 200px 0px 80px;
     padding:0px;
 }
 .activites{
@@ -301,20 +301,19 @@ i{
 }
 .acti_mar{
     display:flex;
-    width:auto;
+    width:47%;
     padding:0;
-    margin-right:5px;
+    margin:0;
 }
-
 .activ{
+    width:49%;
     margin: 0px 0px 0px 5px;
 }
-
 .activites1{
     background:white;
     border-color:#EEEEEE;
     height: 550px;
-    width:425px;
+    width:49%;
     border-radius: 20px 20px 20px 20px;
     box-shadow: 10px 5px 5px #f2f2f2;
     margin-right:5px;
@@ -323,8 +322,9 @@ i{
     background:white;
     border-color:#EEEEEE;
     height:280px;
-    width:425px;
-    margin:0px 5px 22px 5px;
+    width:100%;
+    margin:0px 0px 22px 0px;
+    padding:0;
     border-radius: 20px 20px 20px 20px;
     box-shadow: 10px 5px 5px #f2f2f2;
 }
@@ -332,16 +332,17 @@ i{
     background:white;
     border-color:#EEEEEE;
     height:245px;
-    width:425px;
+    width:100%;
     border-radius: 20px 20px 20px 20px;
     box-shadow: 10px 5px 5px #f2f2f2;
-    margin: 0px 5px 0px 5px;
+    margin:0;
+    padding:0;
 }
 .activites4{
     background:white;
     border-color:#EEEEEE;
     height:245px;
-    width:425px;
+    width:100%;
     margin: 0px 0px 22px 5px;
     border-radius: 20px 20px 20px 20px;
     box-shadow: 10px 5px 5px #f2f2f2;
@@ -350,7 +351,7 @@ i{
     background:white;
     border-color:#EEEEEE;
     height:280px;
-    width:425px;
+    width:100%;
     border-radius: 20px 20px 20px 20px;
     box-shadow: 10px 5px 5px #f2f2f2;
     margin: 0px 0px 0px 5px;
@@ -360,28 +361,28 @@ i{
 }
 .activites1 img{
     height:500px;
-    width:425px;
+    width:100%;
     border-radius: 20px 20px 0px 0px;
     padding:0px;
 }
 .activites2 img{
     height:230px;
-    width:425px;
+    width:100%;
     border-radius: 20px 20px 0px 0px;
 }
 .activites3 img{
     height:195px;
-    width:425px;
+    width:100%;
     border-radius: 20px 20px 0px 0px;  
 }
 .activites4 img{
     height:195px;
-    width:425px;
+    width:100%;
     border-radius: 20px 20px 0px 0px; 
 }
 .activites5 img{
     height:230px;
-    width:425px;
+    width:100%;
     border-radius: 20px 20px 0px 0px; 
 }
 
@@ -390,8 +391,8 @@ i{
 
 footer{
     display:flex;
-    width:100%;
-    margin:30px 0px 0px 0px;
+    width:auto;
+    margin:30px 200px 0px 0px;
     background-color:#f2f2f2;
     padding:0px 0px 0px 80px;
 }
@@ -416,15 +417,11 @@ footer{
    
 /*HEADER*/
 
-
-    .nav{
-        border:solid 1px;
-        display:flex;
-        flex-flow: column-reverse wrap;
-        justify-content: flex-end;
-        list-style:none;
-        padding: 20px 0px 0px 10px;
-    }
+   header{
+       border: solid 1px;
+       width:80%;
+       margin-right:100px;
+   }
     
 
 /*POSITION*/
@@ -534,7 +531,7 @@ footer{
     
 /*POPULAIRE*/
 
-    div.populaire{
+    .populaire{
         display:flex;
         flex-direction:column;
         flex-wrap:wrap;
@@ -550,7 +547,7 @@ footer{
         flex-wrap: wrap;
         border-radius:20px;
         background-color:white;
-        width:95%;
+        width:90%;
         height:160px;
         margin:10px 0px 0px 10px;
         padding:0px;
@@ -562,6 +559,9 @@ footer{
         margin:0;
         padding: 5px 0px 5px 5px;
     }
+    .note{
+        margin-left:-200px;
+    }
     .etoile2{
         padding-top: 35px;
     }
@@ -571,6 +571,7 @@ footer{
         display: flex;
         flex-flow: column-reverse;
         margin-left:10px;
+        width:100%;
     }
     #accommodation h3{
         padding:10px 0px 0px 10px;
@@ -581,7 +582,7 @@ footer{
         background-color:transparent;
         padding:0px;
         margin:10px 0px 0px 5px;
-        width:100%;
+        width:90%;
     }
     div.card{
         border-color:#EEEEEE;
@@ -625,9 +626,10 @@ footer{
         display:flex;
         flex-direction:column;
         margin-bottom:20px;
+        width:200%;
     }   
     div.activites1{
-        width:95%;
+        width:100%;
         height:200px;
         margin: 0px 0px 20px 5px;
     }
@@ -637,9 +639,10 @@ footer{
     }
     .activ{
         margin-left:5px;
+        width:100%;
     }
     div.activites2, div.activites3,  div.activites4, div.activites5{
-        width:95%;
+        width:98%;
         height:200px;
         margin: 0px 0px 20px 5px;
     }
@@ -682,21 +685,23 @@ footer div{
 
 /*HEADER*/
 
-header{
-    border:solid 1px;
-    display:flex;
-    width:100%;
+html, body{
+    margin:0;
 }
-nav {
-    border:solid 1px;
+header{
+    display:flex;
+    width:110%;
+    
+}
+nav{
     display:flex;
     flex-flow: row wrap;
     justify-content: flex-end;
     list-style-type:none;
     width:100%;
+   
 }
 .logo{
-    border:solid 1px;
     padding-top:10px;
     margin-top: 5px;
     height:40px;
@@ -717,11 +722,67 @@ nav {
     border: solid 1px;
     border-radius: 50px;
     border-color:#EEEEEE;
-    margin:30px 0px 0px 5px;
+    margin:30px 5px 0px 5px;
     }
 
+    /*POPULAIRE*/
+
+.populaire{
+    display:flex;
+    flex-flow: row wrap;
+    width:180%;
+    padding-bottom:30px;
+}
+.logepopu1{
+    width:40%;
+    margin:30px 40px 0px 40px;
+}
+.popu{
+    margin:10px 0px 0px 20px;
+    height:20px;
+    width:170%;
+}
     /*HEBERGEMENTS*/
 
+#accommodation{
+    display:flex;
+    flex-direction:column-reverse;
+}
+#accommodation_container{
+    width:190%;
+    background-color:transparent;
+    padding:0;
+    margin:0;
+}
+.card{
+    padding:0;
+    margin:0px 15px 0px 0px;
+}
+.heber_mar{
+    padding: 20px 0px 0px 00px;
+    width: 100%;
+    height:20px;
+}
+.afficher{
+    margin:10px 0px 0px 0px;
+}
+
+
+    /*ACTIVITES*/
+
+
+.activites{
+     display: flex;
+    flex-direction:column;
+    }
+.acti_mar{
+    display:flex;
+    margin-bottom:20px;
+     width:180%;
+    }  
+footer{
+    width:120%;
+}
 
 }
 
