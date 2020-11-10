@@ -11,28 +11,33 @@ html, body{
 
 header{  
     width:auto;
-    margin:20px 300px 0px 80px;
+    margin: 0px 300px 20px 200px;
+    padding:0;
 }
 div.logo {
     float:left;
     padding:0;
     margin: 20px 0px 0px 0px;
 }
-
 .nav {
     display:flex;
     flex-flow: row wrap;
     justify-content: flex-end;
     list-style:none;
 }
-
 .nav li{
     padding:30px 30px 0px 40px;
 }
-.nav a{
+.nav li:nth-child(-n+2) a{
     text-decoration:none;
     display: inline-block;
-    text-align:center;
+    text-align:center; 
+    color:black;
+}
+.nav li:nth-child(3) a{
+    text-decoration:none;
+    color:#0065fc;
+    font-weight:800;
 }
 nav li:hover a{
     color: #0065fc;
@@ -44,9 +49,7 @@ nav li:hover a{
 .link_hover{
     border-top: transparent solid 1px;
     padding:20px 0px 20px 30px;
-    color:black;
 }
-
 
 
 /*POSITION*/
@@ -54,13 +57,12 @@ nav li:hover a{
 #search{
     display:flex;
     flex-direction:column;
-    width:100%;
-    margin-left:80px;
+    width:auto;
+    margin-left:200px;
 }
 div.rechercher{
     display:flex;
     justify-content:flex-start;
-    
 }
 button.btn1{
     background-color:#0065fc;
@@ -120,11 +122,11 @@ p {
 .icones{
     display:flex;
     flex-flow:row wrap;
-    margin-left:40px;
+    margin-left:100px;
     padding:0;
 }
 .titre_filtre{
-    padding: 25px 50px 50px 80px;
+    padding: 25px 50px 20px 200px;
     }
 
 .icones i:hover{
@@ -173,7 +175,7 @@ i{
 }
 .logement{
     display:flex;
-    margin:0px 0px 20px 80px;
+    margin:0px 0px 20px 200px;
 }
 .logement h4{
     padding:2px;
@@ -182,7 +184,7 @@ i{
 
 #accommodation{
     display:flex;
-    margin: 0px 200px 0px 80px;
+    margin: 0px 200px 0px 200px;
     width:auto;
 }
 #accommodation_container{
@@ -191,11 +193,15 @@ i{
     background-color:#f2f2f2;
     width:65%;
     border-radius:20px 20px 20px 20px;
-    padding:0px 30px 0px 20px;
+    padding:20px 30px 0px 0px;
     margin-right:1%;
 }
+
 .heber_mar{
-    padding: 20px 800px 0px 30px;
+    padding: 0px;
+    height:20px;
+    width:25%;
+    margin: 10px 600px 0px 35px;
 }
 .card{
     display: flex;
@@ -204,7 +210,7 @@ i{
     background-color:white;
     width:30%;
     height:275px;
-    margin:0px 0px 20px 30px;
+    margin:20px 0px 20px 30px;
 }
 .card_text_content{
     width: fit-content;
@@ -243,14 +249,13 @@ i{
 
 .populaire{
     display:flex;
-    flex-direction:column; 
+    flex-direction:column ; 
     background-color:#f2f2f2;
-    width:25%;
+    width:26%;
     border-radius:20px;
 }
-.logepopu1 { 
+.logepopu1 {
     display:flex;
-    flex-wrap: row wrap;
     border-radius:20px;
     background-color:white;
     width:90%;
@@ -292,7 +297,7 @@ i{
 
 #Activities{ 
     width:auto;
-    margin:30px 200px 0px 80px;
+    margin:30px 200px 0px 200px;
     padding:0px;
 }
 .activites{
@@ -302,12 +307,12 @@ i{
 .acti_mar{
     display:flex;
     width:47%;
-    padding:0;
+    padding-right:5px;
     margin:0;
 }
 .activ{
     width:49%;
-    margin: 0px 0px 0px 5px;
+    margin: 0;
 }
 .activites1{
     background:white;
@@ -386,20 +391,18 @@ i{
     border-radius: 20px 20px 0px 0px; 
 }
 
-
 /*FOOTER*/
 
 footer{
     display:flex;
-    width:auto;
-    margin:30px 200px 0px 0px;
+    margin:30px 0px 0px 15px;
     background-color:#f2f2f2;
-    padding:0px 0px 0px 80px;
+    padding:0px 0px 0px 180px;
 }
 .footer_text{
     display:flex;
     flex-direction:column;
-    margin-right:20%;
+    margin-right:18%;
     
 }
 .note1{
@@ -418,11 +421,24 @@ footer{
 /*HEADER*/
 
    header{
-       border: solid 1px;
-       width:80%;
-       margin-right:100px;
+       border:solid 1px;
+       margin:0px 25px 0px 15px;
+       padding-right:20px;
    }
-    
+   .logo{
+       
+       margin:10px 0px 0px 0px;
+   }
+ 
+   .link_hover:hover{
+        border-bottom: solid 1px;
+        color:#0065fc;
+}
+    .link_hover{
+        border-bottom: transparent solid 1px;
+        padding:20px 0px 20px 30px;
+}
+
 
 /*POSITION*/
 
@@ -430,7 +446,7 @@ footer{
         display:flex;
         flex-direction:column;
         width:300px;
-        margin:0px 0px 0px 10px;
+        margin:30px 100px 0px 15px;
     }
     button.btn1{
         background-color:#0065fc;
@@ -440,14 +456,11 @@ footer{
         width:50px;
         padding:0px 11px 15px 10px;
         border-color:#EEEEEE;
-        margin:0px;
+        margin-left:-10px;
     }
     .fa-search{
         color:white;
         padding-top:15px;
-    }
-    button.btn1{
-        margin-left:-10px;
     }
     .fa-map-marker-alt{
         width:50px;
@@ -455,27 +468,14 @@ footer{
     span{
         display :none;
     }
-
     input{
         height:46px;
-        width: 200px;
+        width: 190px;
         border-color:#EEEEEE;
         padding-left:20px;
         font-weight:800;
     }
-    .position{
-        width:50px;
-        height:48px;
-        background:#f2f2f2;
-        border: solid 1px;
-        border-color:#EEEEEE;
-        border-radius: 10px 0px 0px 10px;
-    }
-    .position i{
-        padding:15px 10px 0px 20px;
-    }
-
-
+    
 
 /*FILTRES*/
       
@@ -483,27 +483,18 @@ footer{
         display:flex;
         flex-wrap: wrap;
     }
-    div.icones{
+    .icones{
         display:flex;
         flex-flow: row wrap;
         width:auto;
-        margin:0px 0px 0px 0px;
+        margin:0px 0px 0px 15px;
         padding:0px;
     }
-    #filtres b{
-        padding:10px 5px 0px 4px;
-    }
-    #filtres div p{
-         margin:10px 20px 0px 10px;
-    }
-    .icones p{
-        border-radius: 50px;
-        border-color:#EEEEEE;
-        padding: 0px 5px 0px 0px;
-        margin:0px;
+    #filtres  p{
+         margin:10px 30px 0px 0px;
     }
     .titre_filtre{
-        padding:10px 0px 0px 10px;
+        padding:10px 0px 0px 15px;
     }
     .info{
         height:30px;
@@ -517,12 +508,9 @@ footer{
     .fa-info{
         padding:6px 0px 0px 11px;
     }
-    i{
-        color:#0065fc;
-    }
-    div.logement{
+    .logement{
         display:flex;
-        margin:0px 60px 20px 10px;
+        margin:0px 60px 20px 15px;
     }
     .logement h4{
         padding:2px;
@@ -536,18 +524,17 @@ footer{
         flex-direction:column;
         flex-wrap:wrap;
         background-color:#f2f2f2;
-        width:100%;
-        height:600px;
+        width:90%;
         border-radius:0px;
-        margin-left:0px;
+        padding-bottom: 20px;
     }
-    div.logepopu1 { 
+    .logepopu1 { 
         display:flex;
         flex-direction:column;
         flex-wrap: wrap;
         border-radius:20px;
         background-color:white;
-        width:90%;
+        width:91%;
         height:160px;
         margin:10px 0px 0px 10px;
         padding:0px;
@@ -557,20 +544,23 @@ footer{
         height:150px;
         border-radius: 20px 0px 0px 20px;
         margin:0;
-        padding: 5px 0px 5px 5px;
+        padding: 5px 0px 0px 5px;
     }
     .note{
-        margin-left:-200px;
+        margin-left:-180px;
     }
     .etoile2{
-        padding-top: 35px;
+        padding-top: 45px;
+    }
+    .popu{
+        margin-left:10px;
     }
 /*HEBERGEMENTS*/
 
     #accommodation{
         display: flex;
         flex-flow: column-reverse;
-        margin-left:10px;
+        margin-left:15px;
         width:100%;
     }
     #accommodation h3{
@@ -590,10 +580,9 @@ footer{
         border-radius: 20px 20px 20px 20px;
         box-shadow: 10px 5px 5px 5px #f2f2f2;
         margin: 10px 0px 10px 5px;
-        width:98%;
+        width:90%;
         height:200px;
     }
-    
     div.card_image img{
         width:97%;
         height:100px;
@@ -601,8 +590,7 @@ footer{
         border-color:white;
         padding: 5px 5px 0px 5px;
         margin:0px;
-    }  
-    
+    } 
     div.card_text_content{
         font-size:17px;
         font-weight:800;
@@ -610,14 +598,15 @@ footer{
         margin:0px;
     }
     div.afficher{
-        margin-left:5px;
+        margin:15px 0px 0px 5px;
     }
+    
 
 /*ACTIVITES*/
 
     #Activities{
-        margin-left:20px;
-    }
+    margin-left:25px;
+}
     .activites{
         display: flex;
         flex-direction:column;
@@ -625,11 +614,11 @@ footer{
     .acti_mar{
         display:flex;
         flex-direction:column;
-        margin-bottom:20px;
+        margin-bottom:5px;
         width:200%;
     }   
     div.activites1{
-        width:100%;
+        width:95%;
         height:200px;
         margin: 0px 0px 20px 5px;
     }
@@ -642,7 +631,7 @@ footer{
         width:100%;
     }
     div.activites2, div.activites3,  div.activites4, div.activites5{
-        width:98%;
+        width:95%;
         height:200px;
         margin: 0px 0px 20px 5px;
     }
@@ -650,32 +639,37 @@ footer{
         width: 100%;
         height:150px;
     }
+    .acti{
+        height:20px;
+        width:130%;
+        margin:0px 0px 15px 0px;
+    }
     
     
 /*FOOTER*/
 
-footer{
-    display:flex;
-    flex-flow:wrap;
-    height:auto;
-    width:91%;
-    margin-left:10px;
-    padding:20px 0px 0px 20px;;
-}
-footer div{
-    width:375px;
-    margin-bottom:30px;
-}
-.note1{
-    width:375px;
-    display:inline-block;
-    list-style-type: none;
-    padding:0;
-}
+    footer{
+        display:flex;
+        flex-flow:wrap;
+        height:auto;
+        width:85%;
+        margin: 10px 0px 0px 15px;
+        padding:20px 0px 0px 20px;;
+    }
+    footer div{
+        width:375px;
+        margin-bottom:30px;
+    }
+    .note1{
+        width:375px;
+        display:inline-block;
+        list-style-type: none;
+        padding:0;
+    }
     
 }
 
-/*MEDIA QUERY IPAD 3,4 and PRO 9.7"*/
+/*MEDIA QUERY TABLETTE */
 
 @media only screen 
   and (min-device-width: 768px) 
@@ -685,104 +679,106 @@ footer div{
 
 /*HEADER*/
 
-html, body{
-    margin:0;
-}
-header{
-    display:flex;
-    width:110%;
-    
-}
-nav{
-    display:flex;
-    flex-flow: row wrap;
-    justify-content: flex-end;
-    list-style-type:none;
-    width:100%;
-   
-}
-.logo{
-    padding-top:10px;
-    margin-top: 5px;
-    height:40px;
-}
+    html, body{
+        margin:0;
+        padding:0;
+    }
+    header{ 
+        padding:0;
+        margin:10px 80px 0px 60px;
+        width:auto;
+    }
+    .nav {
+        width:80%;
+        padding:0;
+        margin: 0px 0px 0px 30px;
+    }
+
+/*SEARCH*/
+
+    #search{
+        width:100%;
+        margin-left:60px;
+    }
 
 /*FILTRES*/
 
-#filtres{
-    display:flex;
-    width:100%;
-    margin-left:80px;
-    padding:0px;
-}
-.titre_filtre{
-    padding: 25px 0px 0px 0px;
+    #filtres{
+        padding:0;
+        margin-left:60px
     }
-#filtres p{
-    border: solid 1px;
-    border-radius: 50px;
-    border-color:#EEEEEE;
-    margin:30px 5px 0px 5px;
+    #filtres p{
+        margin:25px 30px 0px 10px;
+    }
+    .icones {
+      
+        margin-left:20px;
+    }
+    
+    .titre_filtre{
+        padding:20px 0px 0px 0px;
+        height:20px;
+    }
+    .logement{
+        display:flex;
+        margin:0px 60px 20px 60px;
     }
 
-    /*POPULAIRE*/
-
-.populaire{
-    display:flex;
-    flex-flow: row wrap;
-    width:180%;
-    padding-bottom:30px;
-}
-.logepopu1{
-    width:40%;
-    margin:30px 40px 0px 40px;
-}
-.popu{
-    margin:10px 0px 0px 20px;
-    height:20px;
-    width:170%;
-}
-    /*HEBERGEMENTS*/
-
-#accommodation{
-    display:flex;
-    flex-direction:column-reverse;
-}
-#accommodation_container{
-    width:190%;
-    background-color:transparent;
-    padding:0;
-    margin:0;
-}
-.card{
-    padding:0;
-    margin:0px 15px 0px 0px;
-}
-.heber_mar{
-    padding: 20px 0px 0px 00px;
-    width: 100%;
-    height:20px;
-}
-.afficher{
-    margin:10px 0px 0px 0px;
-}
-
-
-    /*ACTIVITES*/
-
-
-.activites{
-     display: flex;
-    flex-direction:column;
+/*POPULAIRE*/
+    .populaire{
+        width:70%;
+        margin:0px 0px 20px 100px;
     }
-.acti_mar{
-    display:flex;
-    margin-bottom:20px;
-     width:180%;
-    }  
-footer{
-    width:120%;
-}
+/*HEBERGEMENTS*/
 
+    #accommodation{
+        display:flex;
+        flex-direction:column-reverse;
+        margin: 0px 90px 0px 60px;
+    }   
+   #accommodation_container{
+       width:auto;
+       margin:0px; 
+       background-color: transparent;
+   }
+    .card{
+        width:42%;
+        box-shadow: 10px 5px 5px 5px #f2f2f2;
+    }
+    .heber_mar{
+        width:70%;
+        margin:0px 200px 0px 0px;
+    }
+    .afficher{
+        margin:0;
+    }
+
+/*ACTIVITES*/
+
+    #Activities{
+        display: flex;
+        flex-direction:column;
+        width:80%;
+        margin:20px 0px 0px 60px;
+    }
+    .activites{
+        display: flex;
+        flex-direction: column;
+        width:100%;
+    }
+    .acti_mar{
+        width:auto;
+        margin-bottom:10px;
+    }
+
+/*FOOTER*/
+
+    footer{
+        display:flex;
+        width:auto;
+        margin:20px 70px 0px 40px;
+        padding:0px 0px 0px 20px;
+    }
+    
 }
 
