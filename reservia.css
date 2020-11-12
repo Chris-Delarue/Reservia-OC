@@ -10,15 +10,14 @@ html, body{
 /*HEADER*/
 
 header{ 
-    border: solid  transparent 1px;
-    width:auto;
-    margin: 0px 15% 0px 10%;
-    padding:0;
+    margin: 0px 0% 0px 10%;
+    padding-right:14%;
     }
-div.logo {
+.logo {
     float:left;
+    width: auto;
     padding:0;
-    margin: 20px 0px 0px 0px;
+    margin: 1% 0px 0px 0px;
 }
 .nav {
     display:flex;
@@ -27,6 +26,7 @@ div.logo {
     list-style:none;
 }
 .nav li{
+ 
     padding:30px 2% 0px 2%;
 }
 .nav li:nth-child(-n+2) a{
@@ -56,11 +56,10 @@ nav li:hover:nth-child(-n+2) a{
 /*POSITION*/
 
 #search{
-    border:solid transparent 1px;
     display:flex;
     flex-flow:column wrap;
     width:auto;
-    margin:0px 15% 0% 10%;
+    margin-left:10%;
 }
 div.rechercher{
     display:flex;
@@ -83,8 +82,10 @@ button.btn1{
 input{
     height:46px;
     border:  solid 1px;
-    font-family: 'Raleway';
+    font-family:'raleway';
     border-color:#EEEEEE ;
+    font-weight:900;
+    padding-left:8%;
 }
 .position{
     width:50px;
@@ -258,8 +259,7 @@ i{
 
 .populaire{
     display:flex;
-    flex-direction:column ; 
-    flex-wrap: wrap;
+    flex-flow :column wrap; 
     background-color:#f2f2f2;
     width:26%;
     border-radius:2%;
@@ -434,10 +434,10 @@ footer{
 
 @media only screen 
     and (min-device-width : 375px)
-    and (max-device-width : 667px) 
+    and (max-device-width : 667px)
+    and (-webkit-device-pixel-ratio: 2) 
     and (orientation: portrait)
 { 
-
     html,body{
         margin:0;
         padding:0;
@@ -445,19 +445,54 @@ footer{
    
 /*HEADER*/
 
- 
-   .link_hover:hover{
+    header{
+        display:flex;
+        margin-top:3%;
+    }
+   .link_hover:hover {
+        border-top: none;
         border-bottom: solid 1px;
         color:#0065fc;
-}
-    .link_hover{
-        border-bottom: transparent solid 1px;
-        padding:20px 0px 20px 30px;
-}
-
+    }
+    .link_hover {
+        border-top: none;
+        border-bottom: solid 2px;
+        color: #f2f2f2;
+        width:30%;
+    }
+    li.link_hover{
+        padding:0% 8% 4% 8%;
+        text-align: center;
+    }
+    nav{
+        display:flex;
+    }
+    .nav{ 
+        display:flex;
+        flex-flow: column-reverse;
+    }
+    .nav li:nth-child(1){
+        position:absolute;
+        top:12%;
+        left:30px;
+    }
+    .nav li:nth-child(2){
+        position:absolute;
+        top:12%;
+    }
+    .nav li:nth-child(3){
+        border-bottom: none;
+        position:absolute;
+        right:2%;
+    }
+    
 
 /*POSITION*/
 
+    #search{
+        width:80%;
+        margin-top:15%;
+    }
     button.btn1{
         background-color:#0065fc;
         color:white;
@@ -475,20 +510,16 @@ footer{
     span{
         display :none;
     }
-    input{
-        height:46px;
-        width: 90%;
-        border-color:#EEEEEE;
-        padding-left:20px;
-        font-weight:800;
-    }
-    
+   
 
 /*FILTRES*/
       
     #filtres p{
-        margin: 10px 5px 10px 30px;
-}
+        margin: 10px 0px 10px 10px;
+    }
+    .icones{
+        margin-left:5%;
+    }
     .titre_filtre{
         margin: 5% 2% 0% 0%;
     }
@@ -502,9 +533,6 @@ footer{
     .logement h4{
         width:80%;
     }
-    
-
-   
     
 /*POPULAIRE*/
 
@@ -651,7 +679,7 @@ footer{
 @media only screen 
   and (min-device-width: 768px) 
   and (max-device-width: 1024px) 
-  and (-webkit-min-device-pixel-ratio: 2)
+  and (-webkit-device-pixel-ratio: 2) 
   and (orientation: portrait) {
 
 /*HEADER*/
