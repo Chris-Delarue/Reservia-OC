@@ -9,11 +9,12 @@ html, body{
 
 /*HEADER*/
 
-header{  
+header{ 
+    border: solid  transparent 1px;
     width:auto;
-    margin: 0px 300px 20px 200px;
+    margin: 0px 15% 0px 10%;
     padding:0;
-}
+    }
 div.logo {
     float:left;
     padding:0;
@@ -21,12 +22,12 @@ div.logo {
 }
 .nav {
     display:flex;
-    flex-flow: row wrap;
+    flex-flow: wrap;
     justify-content: flex-end;
     list-style:none;
 }
 .nav li{
-    padding:30px 30px 0px 40px;
+    padding:30px 2% 0px 2%;
 }
 .nav li:nth-child(-n+2) a{
     text-decoration:none;
@@ -48,17 +49,18 @@ nav li:hover:nth-child(-n+2) a{
 }
 .link_hover{
     border-top: transparent solid 1px;
-    padding:20px 0px 20px 30px;
+    padding:20px 0px 20px 2%;
 }
 
 
 /*POSITION*/
 
 #search{
+    border:solid transparent 1px;
     display:flex;
-    flex-direction:column;
+    flex-flow:column wrap;
     width:auto;
-    margin-left:200px;
+    margin:0px 15% 0% 10%;
 }
 div.rechercher{
     display:flex;
@@ -67,7 +69,7 @@ div.rechercher{
 button.btn1{
     background-color:#0065fc;
     color:white;
-    border-radius: 0px 30px 30px 0px;
+    border-radius: 0px 20% 20% 0px;
     height: 50px;
     font-family: 'Raleway'; 
     width:100px;
@@ -90,13 +92,17 @@ input{
     background:#f2f2f2;
     border: solid 1px;
     border-color:#EEEEEE;
-    border-radius: 40px 0px 0px 40px;
+    border-radius: 30% 0px 0px 30%;
 }
 .position i{
     padding:15px 10px 0px 20px;
 }
 
  /* H*/
+
+em{
+    font-style:normal;
+}
 h3{
     font-size: 17px;
     font-weight:800;
@@ -107,26 +113,34 @@ h2{
 h4{
     font-size: 13px;
 }
-em{
-    font-style:normal;
-}
-p {
-    font-weight:800;
-    
+p{
+    font-size:1em;
 }
 /*FILTRES*/
 
 #filtres{
     display:flex;
+    flex-wrap:wrap;
+}
+#filtres b{
+    padding:5px 10px 0px 4px;
+}
+#filtres p{
+    border: solid 1px;
+    border-radius: 50px;
+    border-color:#EEEEEE;
+    margin: 15px 30px 0px 0px;
 }
 .icones{
     display:flex;
-    flex-flow:row wrap;
-    margin-left:100px;
-    padding:0;
+    flex-flow: wrap;
+    width:auto;
+    margin: 1% 0% 0% 1%;
 }
 .titre_filtre{
-    padding: 25px 50px 20px 200px;
+    display:flex;
+    flex-wrap:wrap;
+    padding: 1.5% 3% 0% 10%;
     }
 
 .icones i:hover{
@@ -149,42 +163,35 @@ p {
 .fa-map-marker-alt{
     color:black;
 }
-#filtres b{
-    padding:5px 10px 0px 4px;
-}
-#filtres p{
-    border: solid 1px;
-    border-radius: 50px;
-    border-color:#EEEEEE;
-    margin:30px 20px;
-}
 .info{
+    display:flex;
+    flex-wrap:wrap;
     height:30px;
     width:35px;
-    border-radius:20px;
+    border-radius:50%;
     background-color:white;
     border: solid 1px;
     border-color:#f2f2f2;
-    margin: 13px 10px 0px 0px;
+    margin:10px 10px 0px 0px;
 }
 .fa-info{
-    padding:6px 0px 0px 15px;
+    padding: 6px 0px 5px 15px;
 }
 i{
     color:#0065fc;
 }
 .logement{
     display:flex;
-    margin:0px 0px 20px 200px;
+    flex-wrap: wrap;
+    margin:0px 0px 20px 10%;
 }
-.logement h4{
-    padding:2px;
-}
+
     /*HEBERGEMENTS*/
 
 #accommodation{
     display:flex;
-    margin: 0px 200px 0px 200px;
+    flex-wrap:wrap;
+    margin: 0px 10% 0px 10%;
     width:auto;
 }
 #accommodation_container{
@@ -192,53 +199,55 @@ i{
     flex-flow: wrap;
     background-color:#f2f2f2;
     width:65%;
-    border-radius:20px 20px 20px 20px;
-    padding:20px 30px 0px 0px;
+    border-radius:2%;
+    padding:2% 2% 0px 0px;
     margin-right:1%;
 }
 
 .heber_mar{
     padding: 0px;
     height:20px;
-    width:25%;
-    margin: 10px 600px 0px 35px;
+    width:40%;
+    margin: 10px 60% 0px 3%;
 }
 .card{
     display: flex;
-    flex-direction: column;
-    border-radius: 20px 20px 20px 20px;
+    flex-flow: column wrap;
+    border-radius: 5%;
     background-color:white;
     width:30%;
     height:275px;
-    margin:20px 0px 20px 30px;
+    margin:20px 0px 20px 3%;
 }
 .card_text_content{
-    width: fit-content;
+    width: 97%;
     font-size:17px;
-    padding:0px 0px 0px 20px;
-    margin:0px;
+    padding:0px 0px 0px 6%;
+    margin:0;
 }
 .card_text_content p{
     line-height:1px;
+    font-size:1em;
+    font-weight:800;
 }
 .card_image img{
-    width:97%;
+    width:94%;
     height:170px;
-    border-radius: 20px 20px 0px 0px;
+    border-radius: 7% 7% 0px 0px;
     border-color:white;
-    padding: 5px 5px 0px 5px;
+    padding: 2% 4% 0px 2%;
 }  
 .etoile1{
-    margin-left:20px;
+    margin-left:5%;
     color:#0065fc;
-    padding:5px 0px 5px 0px;
+    padding:2% 0px 2% 0px;
 }
 .star{
     color:#f2f2f2;
 }
 .afficher {
     font-weight:800;
-    margin:10px 0px 30px 30px ;
+    margin:2% 0px 4% 3%;
 }
 .afficher a{
     text-decoration:none;
@@ -250,29 +259,34 @@ i{
 .populaire{
     display:flex;
     flex-direction:column ; 
+    flex-wrap: wrap;
     background-color:#f2f2f2;
     width:26%;
-    border-radius:20px;
+    border-radius:2%;
 }
 .logepopu1 {
     display:flex;
-    border-radius:20px;
+    flex-wrap:wrap;
+    border-radius:5%;
     background-color:white;
     width:90%;
-    height:170px;
-    margin: 20px 0px 10px 20px;
+    height:175px;
+    margin: 2% 0px 10px 4%;
 }
 
 .populaire_image img{
-    width:160px;
+    display:flex;
+    flex-wrap:wrap;
+    width:170px;
     height:160px;
-    border-radius: 20px 0px 0px 25px;
-    padding:5px 10px 5px 5px;
+    border-radius: 8% 0px 0px 8%;
+    padding: 5%;
 }
 .note {
     width:auto;
     display: flex;
     flex-direction:column;
+    flex-wrap:wrap;
     font-size:17px;
     height:160px;
 }
@@ -280,7 +294,7 @@ i{
     line-height: 1px;
 }
 .popu{
-    margin:35px 0px 0px 30px;
+    margin:8% 0px 0px 3%;
     width:auto;
 }
  .fa-chart-line{
@@ -289,25 +303,29 @@ i{
     padding-right:9%;
  }
  .etoile2{
-    padding-top:60px;
+    padding-top:40%;
 }
 
 
 /*ACTIVITES*/
 
 #Activities{ 
+    display:flex;
+    flex-wrap:wrap;
     width:auto;
-    margin:30px 200px 0px 200px;
+    margin:2% 10% 0px 10%;
     padding:0px;
 }
 .activites{
     display:flex;
+    flex-wrap:wrap;
     width:auto;
 }
 .acti_mar{
     display:flex;
+    flex-wrap:wrap;
     width:47%;
-    padding-right:5px;
+    padding-right:0;
     margin:0;
 }
 .activ{
@@ -319,8 +337,8 @@ i{
     border-color:#EEEEEE;
     height: 550px;
     width:49%;
-    border-radius: 20px 20px 20px 20px;
-    box-shadow: 10px 5px 5px #f2f2f2;
+    border-radius: 5%;
+    box-shadow: 10px 5px 5px#f2f2f2;
     margin-right:5px;
 }
 .activites2{
@@ -328,9 +346,9 @@ i{
     border-color:#EEEEEE;
     height:280px;
     width:100%;
-    margin:0px 0px 22px 0px;
+    margin:0px 0px 7% 1%;
     padding:0;
-    border-radius: 20px 20px 20px 20px;
+    border-radius: 5%;
     box-shadow: 10px 5px 5px #f2f2f2;
 }
 .activites3{
@@ -338,7 +356,7 @@ i{
     border-color:#EEEEEE;
     height:245px;
     width:100%;
-    border-radius: 20px 20px 20px 20px;
+    border-radius: 5%;
     box-shadow: 10px 5px 5px #f2f2f2;
     margin:0;
     padding:0;
@@ -348,8 +366,8 @@ i{
     border-color:#EEEEEE;
     height:245px;
     width:100%;
-    margin: 0px 0px 22px 5px;
-    border-radius: 20px 20px 20px 20px;
+    margin: 0px 0px 7% 1%;
+    border-radius: 5%;
     box-shadow: 10px 5px 5px #f2f2f2;
 }
 .activites5{
@@ -357,9 +375,9 @@ i{
     border-color:#EEEEEE;
     height:280px;
     width:100%;
-    border-radius: 20px 20px 20px 20px;
+    border-radius: 5%;
     box-shadow: 10px 5px 5px #f2f2f2;
-    margin: 0px 0px 0px 5px;
+    margin: 0px 0px 0px 1%;
 }
 .acti_mar p{
     padding-left: 20px;
@@ -367,41 +385,43 @@ i{
 .activites1 img{
     height:500px;
     width:100%;
-    border-radius: 20px 20px 0px 0px;
+    border-radius: 5% 5% 0% 0%;
     padding:0px;
 }
 .activites2 img{
     height:230px;
     width:100%;
-    border-radius: 20px 20px 0px 0px;
+    border-radius: 5% 5% 0% 0%;
 }
 .activites3 img{
     height:195px;
     width:100%;
-    border-radius: 20px 20px 0px 0px;  
+    border-radius: 5% 5% 0% 0%;  
 }
 .activites4 img{
     height:195px;
     width:100%;
-    border-radius: 20px 20px 0px 0px; 
+    border-radius: 5% 5% 0% 0%; 
 }
 .activites5 img{
     height:230px;
     width:100%;
-    border-radius: 20px 20px 0px 0px; 
+    border-radius: 5% 5% 0% 0%; 
 }
 
 /*FOOTER*/
 
 footer{
     display:flex;
-    margin:30px 0px 0px 15px;
+    flex-wrap: wrap;
+    margin:4% 0px 0px 0%;
     background-color:#f2f2f2;
-    padding:0px 0px 0px 180px;
+    padding-left:10%;
 }
 .footer_text{
     display:flex;
     flex-direction:column;
+    flex-wrap:wrap;
     margin-right:18%;
     
 }
@@ -413,7 +433,7 @@ footer{
 /*MEDIA QUERIES IPHONE 8*/
 
 @media only screen 
-    and (min-device-width : 375px) 
+    and (min-device-width : 375px)
     and (max-device-width : 667px) 
     and (orientation: portrait)
 { 
@@ -425,14 +445,6 @@ footer{
    
 /*HEADER*/
 
-   header{
-       margin:0px 25px 0px 15px;
-       padding-right:20px;
-   }
-   .logo{
-       
-       margin:10px 0px 0px 0px;
-   }
  
    .link_hover:hover{
         border-bottom: solid 1px;
@@ -446,11 +458,6 @@ footer{
 
 /*POSITION*/
 
-    #search{
-        flex-direction:column;
-        width:300px;
-        margin:30px 100px 0px 15px;
-    }
     button.btn1{
         background-color:#0065fc;
         color:white;
@@ -465,15 +472,12 @@ footer{
         color:white;
         padding-top:15px;
     }
-    .fa-map-marker-alt{
-        width:50px;
-    }
     span{
         display :none;
     }
     input{
         height:46px;
-        width: 190px;
+        width: 90%;
         border-color:#EEEEEE;
         padding-left:20px;
         font-weight:800;
@@ -482,43 +486,25 @@ footer{
 
 /*FILTRES*/
       
-    #filtres{
-        display:flex;
-        flex-wrap: wrap;
-    }
-    .icones{
-        display:flex;
-        flex-flow: row wrap;
-        width:auto;
-        margin:0px 18px 0px 15px;
-        padding:0px;
-    }
-    #filtres  p{
-         margin:10px 30px 0px 0px;
-    }
+    #filtres p{
+        margin: 10px 5px 10px 30px;
+}
     .titre_filtre{
-        padding:10px 0px 0px 15px;
+        margin: 5% 2% 0% 0%;
     }
-    .info{
-        height:30px;
-        width:35px;
-        border-radius:20px;
-        background-color:white;
-        border: solid 1px;
-        border-color:#f2f2f2;
-        margin: 13px 10px 0px 0px;
-    }
-    .fa-info{
-        padding:6px 0px 0px 11px;
-    }
-    .logement{
-        display:flex;
-        margin:0px 60px 20px 15px;
+    .logement {
+        display: flex;
+        width:85%;
+        height:70x;
+        margin: 2% 0% 0% 9%;
+        padding:0%;
     }
     .logement h4{
-        padding:2px;
+        width:80%;
     }
+    
 
+   
     
 /*POPULAIRE*/
 
@@ -529,7 +515,7 @@ footer{
         background-color:#f2f2f2;
         width:90%;
         border-radius:0px;
-        padding-bottom: 20px;
+        padding-bottom: 5%;
     }
     .logepopu1 { 
         display:flex;
@@ -563,71 +549,68 @@ footer{
     #accommodation{
         display: flex;
         flex-flow: column-reverse;
-        margin-left:15px;
+        margin-left:8%;
         width:100%;
     }
     #accommodation h3{
-        padding:10px 0px 0px 10px;
+        padding:3% 0px 0px 2%;
     }
     #accommodation_container{
         display: flex;
         flex-direction:column;
         background-color:transparent;
         padding:0;
-        margin:10px 0px 0px 5px;
+        margin:2% 0px 0px 2%;
         width:90%;
     }
-    div.card{
+    div.afficher{
+        margin:3% 0px 0px 1%;
+    }
+    .heber_mar{
+        width:90%;
+        margin:0;
+    }
+    .card{
+        display:flex;
+        flex-flow: column wrap;
         border-color:#EEEEEE;
         background:white;
-        border-radius: 20px 20px 20px 20px;
+        border-radius: 7%;
         box-shadow: 10px 5px 5px 5px #f2f2f2;
-        margin: 10px 0px 10px 5px;
+        margin: 2% 0px 2% 1%;
         width:90%;
         height:200px;
     }
-    div.card_image img{
-        width:97%;
+    .card_image img{
+        width:93%;
         height:100px;
-        border-radius: 20px 20px 0px 0px;
+        border-radius: 20px 20px  0px 0px;
         border-color:white;
-        padding: 5px 5px 0px 5px;
+        padding: 1% 0.% 0px 1%;
         margin:0px;
     } 
-    div.card_text_content{
-        font-size:17px;
-        font-weight:800;
-        padding:2px 0px 5px 20px;
-        margin:0px;
-    }
-    div.afficher{
-        margin:15px 0px 0px 5px;
-    }
-    .heber_mar{
-        width:300px;
-        margin:0;
-    }
-    
+   
 
 /*ACTIVITES*/
 
     #Activities{
-        margin: 20px 25px 0px 25px;
+        flex-direction:column;
+        flex-wrap:wrap;
+        margin: 5% 0% 0% 10%;
         width:auto;
-}
-    .activites{
-        display: flex;
-        flex-direction:column;
     }
+    
     .acti_mar{
+        display:flex;
         flex-direction:column;
-        margin-bottom:5px;
+        flex-wrap:wrap;
         width:100%;
+        margin-bottom:5%
     }  
     .activites1{
         width:90%;
         height:200px;
-        margin: 0px 0px 20px 5px;
+        margin:0% 0% 5% 2%;
     }
     .activites1 img{
         width:100%;
@@ -635,12 +618,11 @@ footer{
     }
     .activites2, .activites3, .activites4, .activites5 {
         height:200px;
-        padding-bottom: 10px;
         width:90%;
+        margin-left:2%;
     }
     .activ{
         width:100%;
-        margin:0px 0px 10px 5px;
     }
     .activ img{
         height:150px;
@@ -654,18 +636,12 @@ footer{
         flex-flow:wrap;
         height:auto;
         width:85%;
-        margin: 10px 0px 0px 15px;
-        padding:20px 0px 0px 20px;;
+        margin: 3% 0% 0% 7%;
+        padding:2% 0% 0% 4%;
     }
-    footer div{
-        width:375px;
-        margin-bottom:30px;
-    }
+   
     .note1{
-        width:375px;
-        display:inline-block;
-        list-style-type: none;
-        padding:0;
+        padding: 0% 0% 7% 0%;
     }
     
 }
@@ -674,7 +650,7 @@ footer{
 
 @media only screen 
   and (min-device-width: 768px) 
-  and (max-device-width: 872px) 
+  and (max-device-width: 1024px) 
   and (-webkit-min-device-pixel-ratio: 2)
   and (orientation: portrait) {
 
@@ -685,73 +661,75 @@ footer{
         padding:0;
     }
     header{ 
-        padding:0;
-        margin:10px 80px 0px 60px;
         width:auto;
+        padding:0;
+        margin:5% 10% 0px 8%;
     }
     .nav {
         width:80%;
         padding:0;
-        margin: 0px 0px 0px 30px;
+        margin-left: 8%;
     }
 
 /*SEARCH*/
 
     #search{
         width:100%;
-        margin-left:60px;
+        margin-left:8%;
     }
 
 /*FILTRES*/
 
     #filtres{
         padding:0;
-        margin-left:60px
+        margin:2% 0% 0% 8%;
     }
     #filtres p{
-        margin:25px 30px 0px 10px;
+        margin:10px 10px 10px 15px;
     }
     .icones {
-      
-        margin-left:20px;
+        margin:0%;
+        width:80%;
     }
-    
     .titre_filtre{
-        padding:20px 0px 0px 0px;
-        height:20px;
+        padding:0%;
+        height:3%;
     }
     .logement{
         display:flex;
-        margin:0px 60px 20px 60px;
+        margin:0% 10% 3% 8%;
     }
 
 /*POPULAIRE*/
     .populaire{
         width:70%;
-        margin:0px 0px 20px 100px;
+        margin:0% 0% 5% 17%;
+        padding-bottom:3%;
     }
+
 /*HEBERGEMENTS*/
 
     #accommodation{
         display:flex;
         flex-direction:column-reverse;
-        margin: 0px 90px 0px 60px;
+        margin: 0% 8% 0% 8%;
     }   
    #accommodation_container{
        width:auto;
-       margin:0px; 
        background-color: transparent;
+       margin:0%;
    }
     .card{
+        margin-left:8%;
         width:42%;
         box-shadow: 10px 5px 5px 5px #f2f2f2;
     }
     .heber_mar{
         width:70%;
-        margin:0px 200px 0px 0px;
+        margin:0% 20% 0% 8%;
     }
     .afficher{
-        margin:0;
+        margin-left:9%;
     }
 
 /*ACTIVITES*/
@@ -760,12 +738,16 @@ footer{
         display: flex;
         flex-direction:column;
         width:80%;
-        margin:20px 0px 0px 60px;
+        margin:2% 0% 0% 8%;
     }
     .activites{
         display: flex;
         flex-direction: column;
         width:100%;
+        margin-left:5%
+    }
+    .acti{
+        margin-left:6%;
     }
     .acti_mar{
         width:auto;
@@ -777,8 +759,8 @@ footer{
     footer{
         display:flex;
         width:auto;
-        margin:20px 70px 0px 40px;
-        padding:0px 0px 0px 20px;
+        margin:5% 4% 0% 7%;
+        padding-left: 5%;
     }
     
 }
