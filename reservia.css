@@ -217,7 +217,7 @@ i{
     border-radius: 5%;
     background-color:white;
     width:30%;
-    height:275px;
+    height:250px;
     margin:20px 0px 20px 3%;
 }
 .card_text_content{
@@ -233,7 +233,7 @@ i{
 }
 .card_image img{
     width:94%;
-    height:170px;
+    height:150px;
     border-radius: 7% 7% 0px 0px;
     border-color:white;
     padding: 2% 4% 0px 2%;
@@ -273,13 +273,16 @@ i{
     height:175px;
     margin: 2% 0px 10px 4%;
 }
+.logepopu1>*{
+    flex: 1 1 25%;
+  }
 
 .populaire_image img{
     display:flex;
     flex-wrap:wrap;
-    width:170px;
+    width:85%;
     height:160px;
-    border-radius: 8% 0px 0px 8%;
+    border-radius: 10% 0px 0px 10%;
     padding: 5%;
 }
 .note {
@@ -302,8 +305,8 @@ i{
     color:black;
     padding-right:9%;
  }
- .etoile2{
-    padding-top:40%;
+.etoile2{
+    padding-top:35%;
 }
 
 
@@ -463,9 +466,6 @@ footer{
         padding:0% 8% 4% 8%;
         text-align: center;
     }
-    nav{
-        display:flex;
-    }
     .nav{ 
         display:flex;
         flex-flow: column-reverse;
@@ -493,13 +493,10 @@ footer{
         margin-top:15%;
     }
     button.btn1{
-        background-color:#0065fc;
-        color:white;
         border-radius:15px;
         height:50px;
         width:50px;
         padding:0px 11px 15px 10px;
-        border-color:#EEEEEE;
         margin-left:-10px;
     }
     .fa-search{
@@ -733,7 +730,9 @@ footer{
         margin:0% 0% 5% 17%;
         padding-bottom:3%;
     }
-
+    .etoile2{
+        padding-top:30%;
+    }
 /*HEBERGEMENTS*/
 
     #accommodation{
