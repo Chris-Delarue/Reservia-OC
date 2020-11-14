@@ -75,7 +75,7 @@ button.btn1{
     font-family: 'Raleway'; 
     width:100px;
     padding:0px 11px 15px 15px;
-    margin:0% 0% 5% -1%;
+    margin:0% 0% 5% -3%;
     border-color:#EEEEEE ;
     border:none;
 }
@@ -435,7 +435,7 @@ footer{
 
     header{
         display:flex;
-        margin: 0% 0% 0% 0%;
+        margin: 0% 0% 0% 5%;
     }
    .link_hover:hover {
         border-top: none;
@@ -473,7 +473,7 @@ footer{
 /*POSITION*/
 
     #search{
-        margin: 20% 0% 0% 0%;
+        margin: 20% 0% 0% 5%;
         width:70%;
     }
     button.btn1{
@@ -481,6 +481,7 @@ footer{
         height:50px;
         width:50px;
         padding:0px 11px 15px 10px;
+        margin-left:-20%;
     }
     .fa-search{
         color:white;
@@ -489,12 +490,13 @@ footer{
     span{
         display :none;
     }
+    
    
    
 /*FILTRES*/
 
     #filtres{
-        margin: 0% 0% 0% 0%;
+        margin: 0% 0% 0% 5%;
     }
     #filtres p{
         margin: 5px 15px 0px 0px;
@@ -504,7 +506,7 @@ footer{
     }
     .logement{
         width:auto;
-        margin: 0% 0% 0% 0%;
+        margin: 0% 0% 0% 5%;
     }
     .logement h4{
         width:70%;
@@ -532,14 +534,14 @@ footer{
         display: flex;
         flex-flow: column-reverse;
         width:100%;
-        margin:0% 0% 0% 0%;
+        margin:0%;
     }
     #accommodation_container{
         background-color:transparent;
         display: flex;
         flex-direction:column;
         width:auto;
-        margin:0%;
+        margin-left:5%;
     }
     .card{
         height:200px;
@@ -559,7 +561,7 @@ footer{
         display:flex;
         flex-direction:column;
         flex-wrap:wrap;
-        margin: 0% 0% 0% 0%;
+        margin: 0% 0% 0% 5%;
         width:auto;
     }
     .acti_mar{
@@ -598,7 +600,7 @@ footer{
         flex-flow:wrap;
         height:auto;
         width:85%;
-        margin: 0% 0% 0% 0%;
+        margin: 0% 0% 0% 5%;
         padding:2% 0% 0% 4%;
     }
    
@@ -611,7 +613,7 @@ footer{
 /*MEDIA QUERY TABLETTE */
 
 @media  screen 
-    and (min-device-width: 768px)
+    and (min-device-width:768px)
     and (max-device-width: 1024px)
 {
 /*HEADER*/
@@ -621,9 +623,9 @@ footer{
         padding:0;
     }
     header{ 
-        width:auto;
+        width:85%;
         padding:0;
-        margin:0%;
+        margin-left:8%;
     }
     .nav {
         width:80%;
@@ -636,15 +638,20 @@ footer{
 /*SEARCH*/
 
     #search{
-        width:100%;
-        margin:0%;
+        display: flex;
+        flex-flow: column Swrap;
+        width:85%;
+        margin: 0% 0% 0% 8%;
     }
 
 /*FILTRES*/
 
     #filtres{
+        display:flex;
+        flex-flow:wrap;
+        width:85%;
         padding:0;
-        margin:2% 0% 0% 0%;
+        margin:2% 0% 0% 8%;
     }
     #filtres p{
         margin:10px 10px 10px 15px;
@@ -659,13 +666,14 @@ footer{
     }
     .logement{
         display:flex;
-        margin:0% 10% 3% 0%;
+        margin:0% 10% 3% 8%;
     }
 
 /*POPULAIRE*/
     .populaire{
+        display:flex;
         width:70%;
-        margin:0% 0% 5% 17%;
+        margin:0% 0% 7% 17%;
         padding-bottom:3%;
     }
     
@@ -679,19 +687,19 @@ footer{
    #accommodation_container{
        width:auto;
        background-color: transparent;
-       margin:0%;
+       margin-left: 8%;
    }
     .card{
-        margin-left:8%;
+        margin-left:5%;
         width:42%;
         box-shadow: 10px 5px 5px 5px #f2f2f2;
     }
     .heber_mar{
         width:70%;
-        margin:0% 20% 0% 8%;
+        margin:0% 20% 0% 6%;
     }
     .afficher{
-        margin-left:9%;
+        margin-left:8%;
     }
 
 /*ACTIVITES*/
@@ -699,20 +707,20 @@ footer{
     #Activities{
         display: flex;
         flex-direction:column;
-        width:80%;
+        width:85%;
         margin:2% 0% 0% 8%;
     }
     .activites{
         display: flex;
         flex-direction: column;
         width:100%;
-        margin-left:5%
+        margin-left:0%
     }
     .acti{
         margin-left:6%;
     }
     .acti_mar{
-        width:auto;
+        width:100%;
         margin-bottom:10px;
     }
 
@@ -720,8 +728,8 @@ footer{
 
     footer{
         display:flex;
-        width:auto;
-        margin:5% 4% 0% 7%;
+        width:85%;
+        margin:5% 8% 0% 5%;
         padding-left: 5%;
     }
     
