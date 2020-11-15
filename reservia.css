@@ -406,7 +406,7 @@ footer{
     flex-wrap: wrap;
     margin:4% 0px 0px 0%;
     background-color:#f2f2f2;
-    padding-left:10%;
+    padding-left:4%;
 }
 .footer_text{
     display:flex;
@@ -418,7 +418,8 @@ footer{
 .note1{
     list-style-type: none;
     padding:0;
-    line-height: 2em;
+    line-height:2em;
+    margin:0%;
 }
 
 /*MEDIA QUERIES IPHONE 8*/
@@ -452,18 +453,24 @@ footer{
         text-align: center;
     }
     .nav li:nth-child(1){
+        display:flex;
+        flex-wrap:wrap;
         position:absolute;
         top:12%;
         left:0%;
         width:40%;
     }
     .nav li:nth-child(2){
+        display:flex;
+        flex-wrap:wrap;
         position:absolute;
         top:12%;
         left:55%;
         width:29%;
     }
     .nav li:nth-child(3){
+        display:flex;
+        flex-wrap:wrap;
         border-bottom: none;
         position:absolute;
         right:2%;
