@@ -77,16 +77,14 @@ button.btn1{
     margin-left:-3%;
     border-color:#0065fc;
     border:none;
-}
-
-    
+} 
 .sous_titre{
     margin-top:0px;
 }
 input{
     width:auto;
     height:46px;
-    border:  solid 1px;
+    border: solid 1px;
     font-family:'raleway';
     border-color:#EEEEEE ;
     font-weight:900;
@@ -99,7 +97,7 @@ input{
     background:#f2f2f2;
     border: solid 1px;
     border-color:#EEEEEE;
-    border-radius: 30% 0px 0px 30%;
+    border-radius: 20px 0px 0px 20px;
 }
 .position i{
     padding:15px 10px 0px 20px;
@@ -654,7 +652,7 @@ footer{
 
     #search{
         display: flex;
-        flex-flow: column Swrap;
+        flex-flow: column wrap;
         width:85%;
         margin: 0% 0% 0% 8%;
     }
