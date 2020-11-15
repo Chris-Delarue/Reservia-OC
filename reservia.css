@@ -59,11 +59,10 @@ nav li:hover:nth-child(-n+2) a{
 #search{
     display:flex;
     flex-flow:column wrap;
-    width:auto;
+    width:60%;
     margin: 0% 3% 0% 3%;
 }
 div.rechercher{
-    width:60%;
     display:flex;
     justify-content:flex-start;
 }
@@ -71,24 +70,28 @@ button.btn1{
     background-color:#0065fc;
     color:white;
     border-radius: 0px 20px 20px 0px;
-    height: 49px;
+    height: 100%;
     font-family: 'Raleway'; 
     width:100px;
-    padding:0px 11px 15px 15px;
-    margin:0% 0% 5% -3%;
-    border-color:#EEEEEE ;
+    padding:0% 11px 0% 0%;
+    margin-left:-3%;
+    border-color:#0065fc;
     border:none;
 }
+
+    
 .sous_titre{
     margin-top:0px;
 }
 input{
+    width:auto;
     height:46px;
     border:  solid 1px;
     font-family:'raleway';
     border-color:#EEEEEE ;
     font-weight:900;
     padding-left:8%;
+    margin-left:-1%;
 }
 .position{
     width:50px;
