@@ -63,6 +63,7 @@ nav li:hover:nth-child(-n+2) a{
     margin: 0% 3% 0% 3%;
 }
 div.rechercher{
+    width:90%;
     display:flex;
     justify-content:flex-start;
 }
@@ -82,14 +83,14 @@ button.btn1{
     margin-top:0px;
 }
 input{
-    width:auto;
+    width:90%;
     height:46px;
     border: solid 1px;
     font-family:'raleway';
     border-color:#EEEEEE ;
     font-weight:900;
     padding-left:8%;
-    margin-left:-1%;
+    margin-left:0;
 }
 .position{
     width:50px;
