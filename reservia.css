@@ -216,7 +216,6 @@ i{
     padding:2% 2% 3% 0px;
     margin-right:1%;
 }
-
 #accommodation_container .heber_mar{
     display:flex;
     flex-wrap:wrap;
@@ -255,6 +254,10 @@ i{
     border-color:white;
     padding: 2% 4% 0px 2%;
 }  
+.card:hover{
+    -webkit-transform: scale (1.06);
+    transform: scale (1.06);
+}
 .etoile1{
     margin-left:5%;
     color:#0065fc;
@@ -290,6 +293,10 @@ i{
     width:90%;
     height:170px;
     margin: 2% 0px 10px 4%;
+}
+.logepopu1:hover{
+    -webkit-transform: scale (1.06);
+    transform: scale (1.06);
 }
  .populaire_image{
      flex-flow: wrap;
@@ -368,6 +375,10 @@ i{
     box-shadow: 10px 5px 5px#f2f2f2;
     margin-right:5px;
 }
+.activites1:hover, .activites2:hover, .activites3:hover{
+    -webkit-transform: scale (1.06);
+    transform: scale(1.06);
+}
 .activites2{
     flex-flow:wrap;
     background:white;
@@ -386,7 +397,6 @@ i{
     border-radius: 20px;
     box-shadow: 10px 5px 5px #f2f2f2;
 }
-
 .acti_mar p{
     flex-flow:wrap;
     padding-left: 20px;
