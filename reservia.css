@@ -157,7 +157,7 @@ p{
 .icones button{
     height:45px;
     width:45px;
-    border-radius:20px;
+    border-radius:50px;
     background-color:#deebff;
     border:none;
 }
@@ -358,7 +358,7 @@ i{
     border-color:#EEEEEE;
     height: 555px;
     width:49%;
-    border-radius: 5%;
+    border-radius: 20px;
     box-shadow: 10px 5px 5px#f2f2f2;
     margin-right:5px;
 }
@@ -368,7 +368,7 @@ i{
     border-color:#EEEEEE;
     height:280px;
     width:100%;
-    border-radius: 5%;
+    border-radius: 20px;
     box-shadow: 10px 5px 5px #f2f2f2;
 }
 .activites3{
@@ -377,7 +377,7 @@ i{
     border-color:#EEEEEE;
     height:245px;
     width:100%;
-    border-radius: 5%;
+    border-radius: 20px;
     box-shadow: 10px 5px 5px #f2f2f2;
 }
 
@@ -389,20 +389,20 @@ i{
     flex-flow:wrap;
     height:500px;
     width:100%;
-    border-radius: 5% 5% 0% 0%;
+    border-radius: 20px 20px 0px 0px;
     padding:0px;
 }
 .activites2 img{
     flex-flow: wrap;
     height:230px;
     width:100%;
-    border-radius: 5% 5% 0% 0%;
+    border-radius: 20px 20px 0px 0px;
 }
 .activites3 img{
     flex-flow: wrap;
     height:195px;
     width:100%;
-    border-radius: 5% 5% 0% 0%;  
+    border-radius: 20px 20px 0px 0px;  
 }
 
 
@@ -555,11 +555,11 @@ footer{
         display: flex;
         flex-direction:column;
         width:auto;
-        margin-left:5%;
+        margin-left:2%;
     }
     .card{
         height:200px;
-        width:90%;
+        width:93%;
         box-shadow: 10px 5px 5px 0px #f2f2f2;
     }
     .card_image img{
@@ -586,7 +586,7 @@ footer{
         margin-bottom:0%;
     }  
     .activites1{
-        width:90%;
+        width:93%;
         height:200px;
         margin:0% 0% 5% 0%;
     }
@@ -595,7 +595,7 @@ footer{
     }
     .activites2, .activites3{
         height:200px;
-        width:90%;
+        width:93%;
         margin:0% 0% 5% 0%;
     }
     .activ{
@@ -613,9 +613,8 @@ footer{
         display:flex;
         flex-flow:wrap;
         height:auto;
-        width:85%;
-        margin: 0% 0% 0% 5%;
-        padding:2% 0% 0% 4%;
+        widthauto;
+        padding:3% 0% 0% 8%;
     }
    
     .note1{
