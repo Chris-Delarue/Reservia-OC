@@ -500,6 +500,7 @@ footer{
         border-bottom: none;
         position:absolute;
         right:2%;
+        top:4%;
     }
     
 
@@ -507,7 +508,7 @@ footer{
 
     #search{
         margin: 20% 0% 0% 5%;
-        width:80%;
+        width:90%;
     }
     button.btn1{
         border-radius:15px;
