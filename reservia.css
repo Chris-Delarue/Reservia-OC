@@ -72,6 +72,10 @@ div.rechercher{
     display:flex;
     flex-flow:wrap;
 }
+div button.btn1{
+    border:solid 1px #0065fc;
+    height:100%;
+}
 button.btn1{
     background-color:#0065fc;
     color:white;
@@ -79,21 +83,21 @@ button.btn1{
     height: 100%;
     width:100px;
     margin:0;
-    padding:0;
-    border:none;
+    padding-bottom:15px;
     font-family:'Raleway';
 } 
 span{
-    
-    margin-right:10px;
-   
+    margin: 0px 10px 5px 0px;
 }
 .sous_titre{
     margin-top:0px;
 }
+div input{
+    height:50px;
+}
 input{
     width:auto;
-    height:46px;
+    height:100%;
     border:solid 1px;
     border-color:#EEEEEE;
     font-family:'Raleway';
@@ -101,11 +105,11 @@ input{
     padding-left:8%;
     margin:0;
 }
+
 .position{
     width:50px;
-    height:48px;
+    height:100%;
     background:#f2f2f2;
-    border: solid 1px;
     border-color:#EEEEEE;
     border-radius: 20px 0px 0px 20px;
 }
@@ -762,11 +766,12 @@ footer{
 
 /*FOOTER*/
 
-    footer{
-        display:flex;
-        width:85%;
-        margin:5% 8% 0% 5%;
-        padding-left: 5%;
+footer{
+    display:flex;
+    flex-flow:wrap;
+    height:auto;
+    width:auto;
+    padding:3% 0% 0% 10%;
     }
     
 }
