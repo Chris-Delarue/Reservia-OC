@@ -105,7 +105,9 @@ input{
     padding-left:8%;
     margin:0;
 }
-
+.fa-map-marker-alt{
+    margin-top:8%;
+}
 .position{
     width:50px;
     height:100%;
@@ -521,7 +523,7 @@ footer{
         height:50px;
         width:50px;
         padding:0px 11px 15px 10px;
-        margin-left:-20%;
+        margin-left:-30%;
     }
     .fa-search{
         color:white;
