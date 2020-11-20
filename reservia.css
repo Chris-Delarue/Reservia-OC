@@ -274,7 +274,7 @@ i{
 }
 .card_image img{
     object-fit: cover;
-    width:93%;
+    width:96%;
     height:150px;
     border-radius: 20px 20px 0px 0px;
     border-color:white;
