@@ -65,7 +65,7 @@ nav li:hover:nth-child(-n+2) a{
 }
 div.rechercher{
     display: flex;
-    flex-wrap:wrap;
+    justify-content: flex-start;
     width:auto;
     margin:0px;
     padding:0px;
@@ -221,15 +221,17 @@ i{
 
 #accommodation{
     display:flex;
-    flex-wrap:wrap;
+    flex-flow:wrap;
     margin: 0px 3% 0px 3%;
     width:auto;
+    height:auto;
 }
 #accommodation_container{
     display:flex;
     flex-flow: wrap;
     background-color:#f2f2f2;
     width:70%;
+    height:auto;
     border-radius:20px;
     padding:2% 2% 3% 0px;
     margin-right:1%;
@@ -251,11 +253,12 @@ i{
     border-radius: 20px;
     background-color:white;
     width:30%;
-    height:255px;
+    height:auto;   
     margin:1% 0% 3% 3%;
 }
 .card_text_content{
-    width: 97%;
+    width: 92%;
+    height:auto;
     font-size:17px;
     padding-left: 6%;
     margin:0;
@@ -265,17 +268,18 @@ i{
     font-size:1em;
     font-weight:800;
 }
+.card_image{
+    width:100%;
+    height:auto;
+}
 .card_image img{
-    width:94%;
+    object-fit: cover;
+    width:93%;
     height:150px;
     border-radius: 20px 20px 0px 0px;
     border-color:white;
     padding: 2% 2% 0% 2%;
 }  
-.card:hover{
-    -webkit-transform: scale(1.06);
-    transform: scale(1.06);
-}
 .etoile1{
     margin-left:5%;
     color:#0065fc;
@@ -301,27 +305,24 @@ i{
     flex-flow: column wrap;
     background-color:#f2f2f2;
     width:26%;
+    height:auto;
     border-radius:20px;
 }
 .logepopu1 {
     display:flex;
-    flex-wrap:wrap;
+    flex-flow:wrap;
     border-radius:20px;
     background-color:white;
     width:90%;
-    height:170px;
+    max-height:100%;
     margin: 4% 0% 4% 4%;
 }
-.logepopu1:hover{
-    -webkit-transform: scale(1.06);
-    transform: scale(1.06);
-}
  .populaire_image{
-     flex-flow: wrap;
-     width:40%;
-     height:100%;
+     max-width:40%;
+     height:170px;
 }
 .populaire_image img{
+    object-fit:cover;
     flex-flow:wrap;
     width:95%;
     height:90%;
@@ -348,10 +349,9 @@ i{
     padding-right:9%;
  }
 .etoile2{
-    flex-flow:wrap;
-    height:20px;
+    height:auto;
     width:75%;
-    margin-top:25%;
+    margin-top:22%;
 }
 
 
@@ -362,12 +362,14 @@ i{
     flex-wrap:wrap;
     width:auto;
     margin:2% 3% 0px 3%;
-    padding:0px;
+    padding:0;
 }
 .activites{
     display:flex;
     flex-wrap:wrap;
     width:auto;
+    padding:0;
+    margin:0;
 }
 .acti_mar{
     display:flex;
@@ -375,32 +377,26 @@ i{
     justify-content: space-around;
     width:49.5%;
     margin:0;
+    padding:0;
 }
 .activ{
     display:flex;
     flex-flow:column wrap;
     justify-content: space-between;
-    width:49%;
+    width:48%;
     margin: 0;
 }
 .activites1{
     flex-flow: wrap;
     background:white;
-    border-color:#EEEEEE;
-    height: 555px;
-    width:49%;
+    height:555px;
+    width:48%;
     border-radius: 20px;
     box-shadow: 10px 5px 5px#f2f2f2;
-    margin-right:5px;
-}
-.activites1:hover, .activites2:hover, .activites3:hover{
-    -webkit-transform: scale(1.06);
-    transform: scale(1.06);
 }
 .activites2{
     flex-flow:wrap;
     background:white;
-    border-color:#EEEEEE;
     height:280px;
     width:100%;
     border-radius: 20px;
@@ -409,7 +405,6 @@ i{
 .activites3{
     flex-flow:wrap;
     background:white;
-    border-color:#EEEEEE;
     height:245px;
     width:100%;
     border-radius: 20px;
@@ -417,9 +412,10 @@ i{
 }
 .acti_mar p{
     flex-flow:wrap;
-    padding-left: 20px;
+    padding-left:5%;
 }
 .activites1 img{
+    object-fit:cover;
     flex-flow:wrap;
     height:500px;
     width:100%;
@@ -427,12 +423,14 @@ i{
     padding:0px;
 }
 .activites2 img{
+    object-fit: cover;
     flex-flow: wrap;
-    height:230px;
+    max-height:230px;
     width:100%;
     border-radius: 20px 20px 0px 0px;
 }
 .activites3 img{
+    object-fit: cover;
     flex-flow: wrap;
     height:195px;
     width:100%;
@@ -522,7 +520,7 @@ footer{
 /*POSITION*/
 
     #search{
-        margin: 20% 0% 0% 5%;
+        margin: 10% 0% 0% 5%;
         width:90%;
     }#search h2{
         width:85%;
@@ -572,6 +570,7 @@ footer{
     .populaire{
         display:flex;
         width:100%;
+        height:auto;
         border-radius:0%;
         margin-top:10%;
         padding-bottom:7%;
@@ -625,14 +624,14 @@ footer{
     }  
     .activites1{
         width:93%;
-        height:200px;
+        height:210px;
         margin:0% 0% 5% 0%;
     }
     .activites1 img{
-        height:150px;
+        height:160px;
     }
     .activites2, .activites3{
-        height:200px;
+        height:210px;
         width:93%;
         margin:0% 0% 5% 0%;
     }
@@ -640,7 +639,7 @@ footer{
         width:100%;
     }
     .activ img{
-        height:150px;
+        height:160px;
     }
     
     
@@ -663,9 +662,9 @@ footer{
 
 /*MEDIA QUERY TABLETTE */
 
-@media  screen 
-    and (min-device-width:768px)
-    and (max-device-width: 1024px)
+@media   screen 
+       and (min-device-width:768px)
+       and (max-device-width: 1024px)
 {
 /*HEADER*/
 
