@@ -361,37 +361,37 @@ i{
 #Activities{ 
     display:flex;
     flex-wrap:wrap;
-    width:auto;
+    width:95%;
     margin:2% 3% 0px 3%;
     padding:0;
 }
 .activites{
     display:flex;
     flex-wrap:wrap;
-    width:auto;
+    justify-content: space-between;
+    width:100%;
     padding:0;
     margin:0;
 }
 .acti_mar{
     display:flex;
     flex-wrap:wrap;
-    justify-content: space-around;
-    width:49.5%;
-    margin:0;
-    padding:0;
+    justify-content: space-between;
+    width:48%;
+    margin-right:1%;
 }
 .activ{
     display:flex;
     flex-flow:column wrap;
     justify-content: space-between;
-    width:48%;
-    margin: 0;
+    width:46%;
 }
 .activites1{
     flex-flow: wrap;
     background:white;
     height:555px;
-    width:48%;
+    width:46%;
+    padding:0;
     border-radius: 20px;
     box-shadow: 10px 5px 5px#f2f2f2;
 }
@@ -576,6 +576,9 @@ footer{
         margin:10% 0 5% 0;
         padding-bottom:7%;
     }
+    .etoile2{
+        margin-top:26%;
+    }
 
 
     
@@ -596,7 +599,6 @@ footer{
     }
     .card{
         width:95%;
-        height:40%;
         margin:3% 0 5% 0;
         box-shadow: 10px 5px 5px 0px #f2f2f2;
     }
@@ -614,7 +616,6 @@ footer{
         flex-wrap:wrap;
         margin: 0% 0% 0% 5%;
         width:94%;
-        height:auto;
     }
     .acti_mar{
         display:flex;
@@ -626,15 +627,15 @@ footer{
     }  
     .activites1{
         width:100%;
-        height:8%;
+        height:20%;
         margin:0% 0% 5% 0%;
     }
     .activites1 img{
         height:auto;
     }
     .activites2, .activites3{
-        height:8%;
         width:100%;
+        height:auto;
         margin:0% 0% 5% 0%;
     }
     .activites2 img, .activites3 img{
