@@ -467,10 +467,7 @@ footer{
 @media screen 
     and (max-device-width : 667px)
 { 
-    html,body{
-        margin:0;
-        padding:0;
-    }
+   
    
 /*HEADER*/
 
@@ -676,10 +673,6 @@ footer{
 {
 /*HEADER*/
 
-    html, body{
-        margin:0;
-        padding:0;
-    }
     header{ 
         width:85%;
         padding:0;
@@ -702,12 +695,13 @@ footer{
         margin: 0% 0% 0% 8%;
     }
 
+
 /*FILTRES*/
 
     #filtres{
         display:flex;
         flex-flow:wrap;
-        width:100%;
+        width:84%;
         padding:0;
         margin:2% 0% 0% 8%;
     }
@@ -788,7 +782,7 @@ footer{
     display:flex;
     flex-flow:wrap;
     height:auto;
-    width:auto;
+    width:90%;
     padding:3% 0% 0% 10%;
     }
     
@@ -811,8 +805,12 @@ footer{
     width:100%;
 }
 #filtres{
-    
-    width:97%;
+    width:92%;
+}
+#filtres p{
+    size:50%;
+    padding:0;
+    margin:1px;
 }
 
     }
