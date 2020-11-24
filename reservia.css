@@ -523,9 +523,11 @@ footer{
     #search{
         margin: 10% 0% 0% 5%;
         width:90%;
-    }#search h2{
+    }
+    #search h2{
         width:85%;
     }
+   
     button.btn1{
         border-radius:15px;
         height:50px;
@@ -546,7 +548,11 @@ footer{
 /*FILTRES*/
 
     #filtres{
+        border:solid 1px;
+        display:flex;
+        width:auto;
         margin: 0% 0% 0% 5%;
+        
     }
     #filtres p{
         margin: 5px 15px 0px 0px;
@@ -702,7 +708,7 @@ footer{
     #filtres{
         display:flex;
         flex-flow:wrap;
-        width:85%;
+        width:100%;
         padding:0;
         margin:2% 0% 0% 8%;
     }
@@ -789,3 +795,25 @@ footer{
     
 }
 
+@media screen
+    and (max-device-width:425px)
+    {
+#search h2{
+    width:75%;
+    }
+#filtres {
+    width: 90%;
+}
+    }
+@media screen
+    and (max-device-width:320px){
+
+#search h2{
+    width:100%;
+}
+#filtres{
+    
+    width:97%;
+}
+
+    }
