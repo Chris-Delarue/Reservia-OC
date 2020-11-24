@@ -548,7 +548,6 @@ footer{
 /*FILTRES*/
 
     #filtres{
-        border:solid 1px;
         display:flex;
         width:auto;
         margin: 0% 0% 0% 5%;
