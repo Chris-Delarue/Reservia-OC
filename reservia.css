@@ -4,12 +4,14 @@ html, body{
     font-family: 'Raleway', sans-serif;
     margin:0;
     padding:0;
+    width:100%;
 }
 
 
 /*HEADER*/
 
 #all_block{
+    width:100%;
     margin:0%;
     padding:0%;
 }
@@ -518,13 +520,10 @@ footer{
 /*POSITION*/
 
     #search{
+        
         margin: 10% 0% 0% 5%;
         width:90%;
     }
-    #search h2{
-        width:85%;
-    }
-   
     button.btn1{
         border-radius:15px;
         height:50px;
@@ -548,7 +547,6 @@ footer{
         display:flex;
         width:auto;
         margin: 0% 0% 0% 5%;
-        
     }
     #filtres p{
         margin: 5px 15px 0px 0px;
@@ -667,6 +665,8 @@ footer{
 
 /*MEDIA QUERY TABLETTE */
 
+
+
 @media   screen 
        and (min-device-width:768px)
        and (max-device-width: 1024px)
@@ -674,16 +674,17 @@ footer{
 /*HEADER*/
 
     header{ 
-        width:85%;
+        width:90%;
         padding:0;
-        margin-left:8%;
+        margin-left:5%;
     }
     .nav {
-        width:80%;
+        float:right;
+        width:79%;
         padding:0;
     }
     .logo{
-        margin-top:2%;
+        margin-top:3%;
     }
 
 /*SEARCH*/
@@ -692,33 +693,35 @@ footer{
         display: flex;
         flex-flow: column wrap;
         width:85%;
-        margin: 0% 0% 0% 8%;
+        margin: 0% 0% 0% 5%;
     }
 
 
 /*FILTRES*/
 
     #filtres{
+        
         display:flex;
         flex-flow:wrap;
-        width:84%;
+        width:92%;
         padding:0;
-        margin:2% 0% 0% 8%;
+        margin:2% 0% 0% 5%;
     }
     #filtres p{
-        margin:10px 10px 10px 15px;
+        margin:10px 0px 10px 2px;
     }
     .icones {
         margin:0%;
-        width:80%;
+        width:92%;
     }
-    .titre_filtre{
-        padding:0%;
+    .titre_filtre{  
+        padding:0;
+        margin:3% .9% 0% 0%;
         height:3%;
     }
     .logement{
         display:flex;
-        margin:0% 10% 3% 8%;
+        margin:0% 10% 3% 5%;
     }
 
 /*POPULAIRE*/
@@ -788,6 +791,7 @@ footer{
     
 }
 
+
 @media screen
     and (max-device-width:425px)
     {
@@ -813,4 +817,4 @@ footer{
     margin:1px;
 }
 
-    }
+}
