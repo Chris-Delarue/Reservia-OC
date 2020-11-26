@@ -62,7 +62,7 @@ nav li:hover:nth-child(-n+2) a{
 #search{
     display:flex;
     flex-flow:column wrap;
-    width:60%;
+    width:auto;
     margin: 0% 3% 0% 3%;
 }
 div.rechercher{
@@ -151,18 +151,20 @@ p{
 /*FILTRES*/
 
 #filtres{
+  
     display:flex;
     flex-wrap:wrap;
     margin: 0% 3% 0% 3%;
+    
 }
 #filtres b{
     padding:5px 10px 0px 4px;
 }
 #filtres p{
-    border: solid 1px;
+    border:solid 1px;
     border-radius: 50px;
     border-color:#EEEEEE;
-    margin: 15px 30px 0px 0px;
+    margin: 8px 30px 0px 0px;
 }
 .icones{
     display:flex;
@@ -172,8 +174,9 @@ p{
 }
 .titre_filtre{
     display:flex;
-    flex-wrap:wrap;
-    padding: 1.5% 3% 0% 0%;
+    padding: 0;
+    margin:2% 3% 0 0;
+    height:5%;
     }
 
 .icones i:hover{
@@ -466,10 +469,9 @@ footer{
 
 /*MEDIA QUERIES IPHONE 8*/
 
-@media screen 
-    and (max-device-width : 667px)
+@media 
+    (max-width : 767px)
 { 
-   
    
 /*HEADER*/
 
@@ -520,9 +522,8 @@ footer{
 /*POSITION*/
 
     #search{
-        
-        margin: 10% 0% 0% 5%;
-        width:90%;
+        margin: 10% 10% 0% 5%;
+        width:80%;
     }
     button.btn1{
         border-radius:15px;
@@ -546,24 +547,25 @@ footer{
     #filtres{
         display:flex;
         width:auto;
-        margin: 0% 0% 0% 5%;
+        margin: 3% 0% 0% 5%;
     }
     #filtres p{
-        margin: 5px 15px 0px 0px;
+        margin: 5px 20px 0px 0px;
     }
     .icones {
-        margin:0% 0% 5% 0%;
+        margin:3% 0 0 0;
+        padding-bottom:0%;
     }
     .logement{
         width:auto;
         margin: 0% 0% 0% 5%;
     }
     .logement h4{
-        width:70%;
-        margin:2% 0% 0% 2%;
+        width:75%;
+        margin:5% 0% 0% 2%;
     }
     .info{
-        margin:0%;
+        margin-top:5%;
     }
 
 /*POPULAIRE*/
@@ -667,9 +669,9 @@ footer{
 
 
 
-@media   screen 
-       and (min-device-width:768px)
-       and (max-device-width: 1024px)
+@media   
+       (min-width:768px)
+       and (max-width: 1338px)
 {
 /*HEADER*/
 
@@ -700,7 +702,6 @@ footer{
 /*FILTRES*/
 
     #filtres{
-        
         display:flex;
         flex-flow:wrap;
         width:92%;
@@ -790,31 +791,13 @@ footer{
     }
     
 }
+@media (max-width: 425px){
 
-
-@media screen
-    and (max-device-width:425px)
-    {
-#search h2{
-    width:75%;
-    }
-#filtres {
-    width: 90%;
-}
-    }
-@media screen
-    and (max-device-width:320px){
-
-#search h2{
-    width:100%;
+#search h2 {
+        width:auto;
 }
 #filtres{
-    width:92%;
-}
-#filtres p{
-    size:50%;
-    padding:0;
-    margin:1px;
+        width:90%;
+    }
 }
 
-}
