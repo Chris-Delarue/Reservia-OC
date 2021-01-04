@@ -469,7 +469,7 @@ footer{
 
 /*MEDIA QUERIES IPHONE 8*/
 
-@media 
+@media screen and
     (max-width : 767px)
 { 
    
@@ -669,8 +669,8 @@ footer{
 
 
 
-@media   
-       (min-width:768px)
+@media  screen 
+       and (min-width:768px)
        and (max-width: 1338px)
 {
 /*HEADER*/
@@ -791,7 +791,7 @@ footer{
     }
     
 }
-@media (max-width: 425px){
+@media screen and (max-width: 425px){
 
 #search h2 {
         width:auto;
